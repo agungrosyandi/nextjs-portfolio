@@ -2,26 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* default settings */
+
+@font-face {
+  font-family: 'NelaSlabLight';
+  src: url('../font/NelaSlab\ Light.ttf') format('truetype');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: 'DrukWideMedium';
+  src: url('../font/DrukTextWide-Medium-Trial.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'DrukWideBold';
+  src: url('../font/DrukTextWide-Bold-Trial.otf') format('opentype');
+}
+
+:root {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  /* color */
+
+  --mainColor: #f5efe7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  overflow-x: hidden;
+}
+
+/* component style */
+
+.section-style {
+  @apply relative w-screen min-h-screen;
 }
