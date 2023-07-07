@@ -1,46 +1,46 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { useState } from 'react';
+import Image from "next/image";
+import { useState } from "react";
 
 import {
   AiOutlineMenu,
   AiOutlineClose,
   AiOutlineWhatsApp,
   AiOutlineMail,
-} from 'react-icons/ai';
+} from "react-icons/ai";
 
-import { BsBook } from 'react-icons/bs';
-import { FiDownload } from 'react-icons/fi';
+import { BsBook } from "react-icons/bs";
+import { FiDownload } from "react-icons/fi";
 
-import { Montserrat } from 'next/font/google';
-import { Cinzel } from 'next/font/google';
+import { Montserrat } from "next/font/google";
+import { Cinzel } from "next/font/google";
 
-import vectorCharacterHome from '../public/character for react portfolio-02.png';
-import vectorCharacterClosing from '../public/character for react portfolio-03.png';
-import graphicDesignVector from '../public/aset-aset nexjs react agung-03.jpg';
-import landingPageVector from '../public/aset-aset nexjs react agung-01.jpg';
-import motionGraphicVector from '../public/aset-aset nexjs react agung-02.jpg';
+import vectorCharacterHome from "../public/character for react portfolio-02.png";
+import vectorCharacterClosing from "../public/character for react portfolio-03.png";
+import graphicDesignVector from "../public/aset-aset nexjs react agung-03.jpg";
+import landingPageVector from "../public/aset-aset nexjs react agung-01.jpg";
+import motionGraphicVector from "../public/aset-aset nexjs react agung-02.jpg";
 
-import vector from '../public/img/illustrator 3.jpg';
-import poster from '../public/img/pic 5.jpg';
+import vector from "../public/img/illustrator 3.jpg";
+import poster from "../public/img/pic 5.jpg";
 
 const montserratParagraph = Montserrat({
-  style: ['normal'],
-  subsets: ['latin'],
-  weight: ['400'],
+  style: ["normal"],
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 const cinzelFont = Cinzel({
-  style: ['normal'],
-  subsets: ['latin'],
-  weight: ['500'],
+  style: ["normal"],
+  subsets: ["latin"],
+  weight: ["500"],
 });
 
 const cinzelFont400 = Cinzel({
-  style: ['normal'],
-  subsets: ['latin'],
-  weight: ['400'],
+  style: ["normal"],
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 const VideoMotionGraphic = () => {
@@ -49,7 +49,7 @@ const VideoMotionGraphic = () => {
       <video
         width={1000}
         height={1000}
-        src={require('../public/video/simpleaccounting.mp4')}
+        src={require("../public/video/simpleaccounting.mp4")}
         autoPlay
         loop
         muted
@@ -68,7 +68,7 @@ const VideoNarasiHistorian = () => {
       <video
         width={1000}
         height={1000}
-        src={require('../public/video/narasihistorian.mp4')}
+        src={require("../public/video/narasihistorian.mp4")}
         autoPlay
         loop
         muted
@@ -88,7 +88,7 @@ const CardSkills = (props) => {
         <Image
           className="pb-5"
           alt=""
-          style={{ objectFit: 'cover' }}
+          style={{ objectFit: "cover" }}
           width={500}
           height={500}
           src={props.image}
@@ -118,7 +118,7 @@ export default function Home() {
       <nav
         className={`${cinzelFont400.className} fixed flex justify-between items-center w-screen z-10 px-5 py-5 tabletMinWidth:px-10 `}
       >
-        <h1 className="text-logoNavbar">AGUNG</h1>
+        <h1 className="text-logoNavbar">AR</h1>
         <ul className="items-center text-lg hidden tabletMinWidth:flex tabletMinWidth:border-b tabletMinWidth:border-gray-600">
           <li className="pr-5">
             <a href="">About</a>
@@ -140,8 +140,8 @@ export default function Home() {
         <div
           className={
             !nav
-              ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-gray-100 ease-in-out duration-500 '
-              : 'fixed left-[-100%]'
+              ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-gray-100 ease-in-out duration-500 "
+              : "fixed left-[-100%]"
           }
         >
           <h1 className="text-logoNavbar p-5">AGUNG</h1>
@@ -171,7 +171,7 @@ export default function Home() {
               Hi, My Name is
             </p>
             <h1
-              className={`${cinzelFont.className} text-[4rem] leading-none pt-4 tabletMinWidth:text-[7rem] laptopMinWidth:text-[6rem] desktopMinWidth:text-[7rem] fullHdMinWidth:text-[10rem] fullHdMinWidth:pr-10 `}
+              className={`${cinzelFont.className} text-[4rem] leading-none pt-4 tabletMinWidth:text-[6rem] desktopMinWidth:text-[7rem] fullHdMinWidth:text-[10rem] fullHdMinWidth:pr-10 `}
             >
               Agung Rosyandi
             </h1>
@@ -181,20 +181,20 @@ export default function Home() {
               Design, Code, Video
             </h4>
             <p
-              className={`${montserratParagraph.className} text-xs p-5 border-b border-gray-600 tabletMinWidth:text-lg tabletMinWidth:p-10 laptopMinWidth:p-0 laptopMinWidth:py-5 laptopMinWidth:border-0 laptopMinWidth:pr-32 laptopMinWidth:text-base desktopMinWidth:pr-72 fullHdMinWidth:text-2xl`}
+              className={`${montserratParagraph.className} text-xs p-5 border-b border-gray-600 tabletMinWidth:text-lg tabletMinWidth:p-10 laptopMinWidth:p-0 laptopMinWidth:py-5 laptopMinWidth:border-0 laptopMinWidth:pr-[8rem] desktopMinWidth:pr-[18rem] fullHdMinWidth:pr-[30rem]`}
             >
               I build graphic design, minimalist landing page, motion graphic or
               explainer video. Accessible, inclusive products for social media
               and the web
             </p>
           </div>
-          <div className="relative overflow-hidden rounded-full bg-gradient-to-b from-stone-400 w-72 h-72 mt-5 tabletMinWidth:w-96 tabletMinWidth:h-96 laptopMinWidth:rounded-none desktopMinWidth:h-[30rem] fullHdMinWidth:w-[30rem] fullHdMinWidth:h-[40rem]">
+          <div className="relative overflow-hidden rounded-full bg-gradient-to-b from-stone-500 w-72 h-72 mt-5 tabletMinWidth:w-96 tabletMinWidth:h-96 laptopMinWidth:rounded-none desktopMinWidth:h-[30rem] fullHdMinWidth:w-[30rem] fullHdMinWidth:h-[40rem]">
             <Image
               className="object-top"
               src={vectorCharacterHome}
               alt="Picture of the home"
               fill
-              style={{ objectFit: 'cover' }}
+              style={{ objectFit: "cover" }}
             />
           </div>
         </div>
@@ -211,33 +211,33 @@ export default function Home() {
               About Me
             </h3>
             <p
-              className={`${montserratParagraph.className} text-sm pt-8 px-5 tabletMinWidth:text-lg tabletMinWidth:px-10 desktopMinWidth:px-20 fullHdMinWidth:text-3xl fullHdMinWidth:px-40`}
+              className={`${montserratParagraph.className} text-sm pt-8 px-5 tabletMinWidth:text-lg tabletMinWidth:px-10 desktopMinWidth:px-20 fullHdMinWidth:text-2xl fullHdMinWidth:px-40`}
             >
               Multimedia specialist with great enthusiast about technology.
               Currently im proficient in some Adobe Creative Suits software and
-              also Web Development tech like a HTML, CSS and Javascript
+              also Web Development tech such as HTML, CSS and Javascript
             </p>
           </div>
           <div className="flex flex-1 flex-wrap justify-center gap-6 pt-10 ">
             <div className="text-center shadow-lg p-4 my-5 rounded-xl">
               <CardSkills
                 image={graphicDesignVector}
-                name={'Graphic Design'}
-                subName={'Adobe Illustrator, Photoshop'}
+                name={"Graphic Design"}
+                subName={"Adobe Illustrator, Photoshop"}
               />
             </div>
             <div className="text-center shadow-lg p-4 my-5 rounded-xl">
               <CardSkills
                 image={landingPageVector}
-                name={'Landing Page'}
-                subName={'HTML, CSS, Javascript'}
+                name={"Landing Page"}
+                subName={"HTML, CSS, Javascript"}
               />
             </div>
             <div className="text-center shadow-lg p-4 my-5 rounded-xl">
               <CardSkills
                 image={motionGraphicVector}
-                name={'Motion Graphic'}
-                subName={'Adobe After Effect, Premierre Pro'}
+                name={"Motion Graphic"}
+                subName={"Adobe After Effect, Premierre Pro"}
               />
             </div>
           </div>
@@ -255,27 +255,143 @@ export default function Home() {
               My Area of Expertise
             </h3>
             <p
-              className={`${montserratParagraph.className} text-sm pt-8 px-5 tabletMinWidth:text-lg tabletMinWidth:px-10 desktopMinWidth:px-20 fullHdMinWidth:text-3xl`}
+              className={`${montserratParagraph.className} text-sm pt-8 px-5 tabletMinWidth:text-lg tabletMinWidth:px-10 desktopMinWidth:px-20 fullHdMinWidth:text-2xl`}
             >
               I can create material content from scratch, including poster
-              style, vector, motion graphic, explainer video, and landing page
-              for increasing the reputation of your brand or business through
-              creative, minimalist and beautiful style. So click pic below for
+              style, vector, motion graphic, explainer video, and the landing
+              page for increased reputation of your brand through creative,
+              minimalist and beautiful style. So click icon or pic below for
               more details.
             </p>
+            <div className="flex justify-center items-center py-10">
+              <div className="mx-3">
+                <BsBook
+                  className="w-7 h-7 tabletMinWidth:w-9 tabletMinWidth:h-9"
+                  size={100}
+                />
+              </div>
+
+              <div className="mx-3">
+                <BsBook
+                  className="w-7 h-7 tabletMinWidth:w-9 tabletMinWidth:h-9"
+                  size={100}
+                />
+              </div>
+
+              <div className="mx-3">
+                <FiDownload
+                  className="w-7 h-7 tabletMinWidth:w-9 tabletMinWidth:h-9"
+                  size={100}
+                />
+              </div>
+            </div>
           </div>
           <div className="flex flex-1 flex-col gap-4 py-10 justify-center items-center tabletMinWidth:flex-wrap tabletMinWidth:flex-row desktopMinWidth:px-10">
-            <div className="flex-1 basis-1/3">
-              <Image src={poster} alt="poster" />
+            {/* poster ------------------------------  */}
+
+            <div className="group relative overflow-hidden flex-1 basis-1/3 cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow">
+              <Image
+                className="group-hover:rotate-3 group-hover:scale-125 transition-transform"
+                src={poster}
+                alt="poster"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70" />
+              <div className="absolute text-white  inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[90%] group-hover:translate-y-0 transition-all duration-500">
+                <h1
+                  className={`${cinzelFont400.className} text-3xl font-bold laptopMinWidth:text-4xl desktopMinWidth:text-5xl fullHdMinWidth:text-7xl`}
+                >
+                  Retro sytle & Poster Design
+                </h1>
+                <p className="text-xs italic py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 laptopMinWidth:text-sm fullHdMinWidth:text-lg">
+                  Used the photoshop and also raw material asset from the
+                  internet, make design with positive and negatif space
+                  perspective and mixed with gradient color, image costum font
+                  and so on, the output will looks beautiful and also minimalist
+                </p>
+                <button className="rounded-full shadow shadow-black/60 bg-transparent py-2 px-10 text-sm capitalize laptopMinWidth:text-base desktopMinWidth:text-lg">
+                  Explore
+                </button>
+              </div>
             </div>
-            <div className="flex-1 basis-1/3">
-              <Image src={vector} alt="vector" />
+
+            {/* vector ------------------------------  */}
+
+            <div className="group relative overflow-hidden flex-1 basis-1/3 cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow ">
+              <Image
+                className="group-hover:rotate-3 group-hover:scale-125 transition-transform"
+                src={vector}
+                alt="vector"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70" />
+              <div className="absolute text-white  inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[90%] group-hover:translate-y-0 transition-all duration-500">
+                <h1
+                  className={`${cinzelFont400.className} text-3xl font-bold laptopMinWidth:text-4xl desktopMinWidth:text-5xl fullHdMinWidth:text-7xl`}
+                >
+                  Illustration & Vector Design
+                </h1>
+                <p className="text-xs italic py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 laptopMinWidth:text-sm fullHdMinWidth:text-lg">
+                  Used the Adobe Illustrator and also custom illustration
+                  technique from shape layers and modified raw vector from the
+                  internet, make character and object with 2D style. that will
+                  make you content look unique, interesting and fun for audience
+                  to see
+                </p>
+                <button className="rounded-full shadow shadow-black/60 bg-transparent py-2 px-10 text-sm capitalize laptopMinWidth:text-base desktopMinWidth:text-lg">
+                  Explore
+                </button>
+              </div>
             </div>
-            <div className="flex-1 basis-1/3">
-              <VideoMotionGraphic alt="motiongraphic" />
+
+            {/* motion graphic ------------------------------  */}
+
+            <div className="group relative overflow-hidden flex-1 basis-1/3 cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow">
+              <VideoMotionGraphic
+                className="group-hover:rotate-3 group-hover:scale-125 transition-transform"
+                alt="motiongraphic"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70" />
+              <div className="absolute text-white  inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[90%] group-hover:translate-y-0 transition-all duration-500">
+                <h1
+                  className={`${cinzelFont400.className} text-3xl font-bold laptopMinWidth:text-4xl desktopMinWidth:text-5xl fullHdMinWidth:text-7xl`}
+                >
+                  Motion & Explainer Video
+                </h1>
+                <p className="text-xs italic py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 laptopMinWidth:text-sm fullHdMinWidth:text-lg">
+                  Used raw material output from photoshop, illustrator and
+                  premierre pro such a pixel, vector and cinematic material,
+                  make distinct content with motion graphic style to get more
+                  audience and incerease engagment rate on social media
+                </p>
+                <button className="rounded-full shadow shadow-black/60 bg-transparent py-2 px-10 text-sm capitalize laptopMinWidth:text-base desktopMinWidth:text-lg">
+                  Explore
+                </button>
+              </div>
             </div>
-            <div className="flex-1 basis-1/3">
-              <VideoNarasiHistorian alt="narasihistorian" />
+
+            {/* landing page ------------------------------  */}
+
+            <div className="group relative overflow-hidden flex-1 basis-1/3 cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow">
+              <VideoNarasiHistorian
+                className="group-hover:rotate-3 group-hover:scale-125 transition-transform"
+                alt="narasihistorian"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70" />
+              <div className="absolute text-white  inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[90%] group-hover:translate-y-0 transition-all duration-500">
+                <h1
+                  className={`${cinzelFont400.className} text-3xl font-bold laptopMinWidth:text-4xl desktopMinWidth:text-5xl fullHdMinWidth:text-7xl`}
+                >
+                  Landing Page & Front-End Web
+                </h1>
+                <p className="text-xs italic py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 laptopMinWidth:text-sm fullHdMinWidth:text-lg">
+                  In the era Digitalization 4.0, graphic and video content stil
+                  not enough to make your content special and unique, so build
+                  your content to the web development, make your brand look more
+                  profesional.
+                </p>
+                <button className="rounded-full shadow shadow-black/60 bg-transparent py-2 px-10 text-sm capitalize laptopMinWidth:text-base desktopMinWidth:text-lg">
+                  Explore
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -297,12 +413,19 @@ export default function Home() {
               Dont hestitate to contact me if you need my service
             </p>
 
-            <div className="flex justify-center py-5 border-b border-gray-600 laptopMinWidth:border-none laptopMinWidth:justify-start ">
-              <AiOutlineWhatsApp className="px-2" size={40} />
-              <AiOutlineMail className="px-2" size={40} />
-              <BsBook className="px-2" size={40} />
-              <BsBook className="px-2" size={40} />
-              <FiDownload className="px-2" size={40} />
+            <div className="flex justify-center py-10 laptopMinWidth:justify-start ">
+              <div className="mx-3">
+                <AiOutlineWhatsApp
+                  className="w-7 h-7 tabletMinWidth:w-9 tabletMinWidth:h-9"
+                  size={100}
+                />
+              </div>
+              <div className="mx-3">
+                <AiOutlineMail
+                  className="w-7 h-7 tabletMinWidth:w-9 tabletMinWidth:h-9"
+                  size={100}
+                />
+              </div>
             </div>
           </div>
           <div className="relative overflow-hidden rounded-full bg-gradient-to-b from-stone-600 w-72 h-72 mt-5 tabletMinWidth:w-96 tabletMinWidth:h-96 laptopMinWidth:rounded-none desktopMinWidth:h-[30rem] fullHdMinWidth:w-[30rem] fullHdMinWidth:h-[40rem]">
@@ -312,7 +435,7 @@ export default function Home() {
               alt="Picture of the home"
               width={500}
               height={500}
-              style={{ objectFit: 'cover' }}
+              style={{ objectFit: "cover" }}
             />
           </div>
         </div>
