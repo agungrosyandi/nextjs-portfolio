@@ -1,12 +1,16 @@
 import React from "react";
 import Image from "next/image";
 
-import { Montserrat } from "next/font/google";
-import { Cinzel } from "next/font/google";
+// image import ----------------------------------------------------------------------
 
 import graphicDesignVector from "../../public/aset-aset nexjs react agung-03.jpg";
 import landingPageVector from "../../public/aset-aset nexjs react agung-01.jpg";
 import motionGraphicVector from "../../public/aset-aset nexjs react agung-02.jpg";
+
+// font import ----------------------------------------------------------------------
+
+import { Montserrat } from "next/font/google";
+import { Cinzel } from "next/font/google";
 
 const montserratParagraph = Montserrat({
   style: ["normal"],
@@ -20,11 +24,7 @@ const cinzelFont = Cinzel({
   weight: ["500"],
 });
 
-const cinzelFont400 = Cinzel({
-  style: ["normal"],
-  subsets: ["latin"],
-  weight: ["400"],
-});
+// Card props ----------------------------------------------------------------------
 
 const CardSkills = (props) => {
   return (
@@ -47,6 +47,8 @@ const CardSkills = (props) => {
   );
 };
 
+// main component ----------------------------------------------------------------------
+
 const About = () => {
   return (
     <section className="relative w-screen min-h-screen">
@@ -60,7 +62,7 @@ const About = () => {
           <p
             className={`${montserratParagraph.className} text-sm pt-8 px-5 tabletMinWidth:text-lg tabletMinWidth:px-10 desktopMinWidth:px-20 fullHdMinWidth:text-2xl fullHdMinWidth:px-40`}
           >
-            Multimedia specialist with great enthusiast about technology.
+            Multimedia specialist with great passions about technology.
             Currently im proficient in some Adobe Creative Suits software and
             also Web Development tech such as HTML, CSS and Javascript
           </p>

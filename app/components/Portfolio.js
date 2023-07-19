@@ -5,11 +5,15 @@ import Link from "next/link";
 import { BsBook } from "react-icons/bs";
 import { FiDownload } from "react-icons/fi";
 
-import { Montserrat } from "next/font/google";
-import { Cinzel } from "next/font/google";
+// image import ----------------------------------------------------
 
 import vector from "../../public/img/illustrator 3.jpg";
 import poster from "../../public/img/pic 5.jpg";
+
+// font import ----------------------------------------------------
+
+import { Montserrat } from "next/font/google";
+import { Cinzel } from "next/font/google";
 
 const montserratParagraph = Montserrat({
   style: ["normal"],
@@ -29,6 +33,8 @@ const cinzelFont400 = Cinzel({
   weight: ["400"],
 });
 
+// video props ----------------------------------------------------
+
 const VideoMotionGraphic = () => {
   return (
     <>
@@ -40,7 +46,7 @@ const VideoMotionGraphic = () => {
         loop
         muted
         controls
-        playsinline
+        playsInline
         type="video/mp4"
         loading="lazy"
       />
@@ -59,7 +65,7 @@ const VideoNarasiHistorian = () => {
         loop
         muted
         controls
-        playsinline
+        playsInline
         type="video/mp4"
         loading="lazy"
       />
@@ -67,7 +73,9 @@ const VideoNarasiHistorian = () => {
   );
 };
 
-const PortfolioSections = () => {
+// main component --------------------------------------------------
+
+const Portfolio = () => {
   return (
     <section className="relative w-screen min-h-screen">
       <div className="relative w-full h-full">
@@ -83,7 +91,7 @@ const PortfolioSections = () => {
             I can create material content from scratch, including poster style,
             vector, motion graphic, explainer video, and the landing page for
             increased reputation of your brand through creative, minimalist and
-            beautiful style. So click icon or pic below for more details.
+            beautiful style.
           </p>
           <div className="flex justify-center items-center py-10">
             <div className="mx-3">
@@ -244,4 +252,4 @@ const PortfolioSections = () => {
   );
 };
 
-export default PortfolioSections;
+export default Portfolio;

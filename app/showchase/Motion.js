@@ -88,7 +88,7 @@ const VideoNarasiHistorian = () => {
 
 // main component ----------------------------------------------------
 
-const Vector = () => {
+const Motion = () => {
   return (
     <section className="relative w-screen min-h-screen">
       <div className="relative flex flex-col flex-1 justify-center items-center w-full h-full px-5 py-20 tabletMinWidth:px-10 tabletMinWidth:py-32 laptopMinWidth:px-20">
@@ -120,4 +120,4 @@ const Vector = () => {
   );
 };
 
-export default Vector;
+export default Motion;

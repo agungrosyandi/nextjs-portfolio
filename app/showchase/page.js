@@ -1,6 +1,7 @@
 "use client";
 
-import NavbarPosterSections from "./Navbar&Poster";
+import NavbarSections from "../components/Navbar";
+import PosterSections from "./Poster";
 import VectorSections from "./Vector";
 import MotionSections from "./Motion";
 
@@ -9,7 +10,8 @@ import MotionSections from "./Motion";
 export default function Showchase() {
   return (
     <main className="bg-white">
-      <NavbarPosterSections />
+      <NavbarSections />
+      <PosterSections />
       <VectorSections />
       <MotionSections />
     </main>
