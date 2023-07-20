@@ -1,5 +1,5 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 // import { useLayoutEffect, useRef, useEffect } from 'react';
 
 // gsap import -----------------------------------------------------------------
@@ -9,29 +9,29 @@ import Image from 'next/image';
 
 // image background home import ----------------------------------------------------
 
-import vectorCharacterHome from '../../public/character for react portfolio-02.png';
+import vectorCharacterHome from "../../public/character for react portfolio-02.png";
 
 // font import ----------------------------------------------------
 
-import { Montserrat } from 'next/font/google';
-import { Cinzel } from 'next/font/google';
+import { Montserrat } from "next/font/google";
+import { Cinzel } from "next/font/google";
 
 const montserratParagraph = Montserrat({
-  style: ['normal'],
-  subsets: ['latin'],
-  weight: ['400'],
+  style: ["normal"],
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 const cinzelFont = Cinzel({
-  style: ['normal'],
-  subsets: ['latin'],
-  weight: ['500'],
+  style: ["normal"],
+  subsets: ["latin"],
+  weight: ["500"],
 });
 
 const cinzelFont400 = Cinzel({
-  style: ['normal'],
-  subsets: ['latin'],
-  weight: ['400'],
+  style: ["normal"],
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 // main component --------------------------------------------------
@@ -86,7 +86,7 @@ const Home = () => {
               alt="Picture of the home"
               fill
               sizes="100vw"
-              style={{ objectFit: 'cover' }}
+              style={{ objectFit: "cover" }}
               placeholder="blur"
             />
           </div>

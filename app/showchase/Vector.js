@@ -39,7 +39,7 @@ import catVector from "../../public/aset vector/illustrator 3.jpg";
 
 const Vector = () => {
   return (
-    <section className="relative w-screen min-h-screen">
+    <section className="section-without-minheight">
       <div className="relative flex flex-col flex-1 justify-center items-center w-full h-full px-5 py-20 tabletMinWidth:px-10 tabletMinWidth:py-32 laptopMinWidth:px-20">
         <div className="relative flex-1 text-center">
           <h1
