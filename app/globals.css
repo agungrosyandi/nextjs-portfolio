@@ -5,18 +5,18 @@
 /* default settings */
 
 @font-face {
-  font-family: "NelaSlabLight";
-  src: url("../font/NelaSlab\ Light.ttf") format("truetype");
+  font-family: 'NelaSlabLight';
+  src: url('../font/NelaSlab\ Light.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "DrukWideMedium";
-  src: url("../font/DrukTextWide-Medium-Trial.otf") format("opentype");
+  font-family: 'DrukWideMedium';
+  src: url('../font/DrukTextWide-Medium-Trial.otf') format('opentype');
 }
 
 @font-face {
-  font-family: "DrukWideBold";
-  src: url("../font/DrukTextWide-Bold-Trial.otf") format("opentype");
+  font-family: 'DrukWideBold';
+  src: url('../font/DrukTextWide-Bold-Trial.otf') format('opentype');
 }
 
 :root {
@@ -40,6 +40,6 @@ body {
 
 /* component style */
 
-.section-style {
+.section-style-home {
   @apply relative w-screen min-h-screen;
 }
