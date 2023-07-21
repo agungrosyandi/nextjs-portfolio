@@ -1,11 +1,5 @@
 import React from "react";
 import Image from "next/image";
-// import { useLayoutEffect, useRef, useEffect } from 'react';
-
-// gsap import -----------------------------------------------------------------
-
-// import { gsap, Power3 } from 'gsap';
-// import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // image background home import ----------------------------------------------------
 
@@ -37,16 +31,6 @@ const cinzelFont400 = Cinzel({
 // main component --------------------------------------------------
 
 const Home = () => {
-  // let imageBackground = useRef(null);
-  // let titleMyName = useRef(null);
-  // let titleAgung = useRef(null);
-  // let titleRosyandi = useRef(null);
-  // let subDesign = useRef(null);
-  // let subCode = useRef(null);
-  // let subVideo = useRef(null);
-
-  // useLayoutEffect(() => {}, []);
-
   return (
     <>
       <section id="home" className="section-style-home">
@@ -55,10 +39,10 @@ const Home = () => {
             <p
               className={`${cinzelFont400.className} text-lg tabletMinWidth:text-2xl fullHdMinWidth:text-3xl`}
             >
-              Hi, My Name is
+              Hi, My Name isi
             </p>
             <h1
-              className={`${cinzelFont.className} flex flex-col text-[4rem] leading-none pt-4 tabletMinWidth:text-[6rem] desktopMinWidth:text-[7rem] fullHdMinWidth:text-[10rem] fullHdMinWidth:pr-10 `}
+              className={`${cinzelFont.className} flex flex-col text-[3.5rem] leading-none pt-4 tabletMinWidth:text-[6rem] desktopMinWidth:text-[7rem] fullHdMinWidth:text-[8rem]`}
             >
               <span>Agung</span>
 
@@ -72,20 +56,20 @@ const Home = () => {
               <span>Video</span>
             </h4>
             <p
-              className={`${montserratParagraph.className} text-xs p-5 border-b border-gray-600 tabletMinWidth:text-lg tabletMinWidth:p-10 laptopMinWidth:p-0 laptopMinWidth:py-5 laptopMinWidth:border-0 laptopMinWidth:pr-[8rem] desktopMinWidth:pr-[18rem] fullHdMinWidth:pr-[30rem]`}
+              className={`${montserratParagraph.className} text-xs p-5 border-b border-gray-600 tabletMinWidth:text-lg tabletMinWidth:p-10 laptopMinWidth:p-0 laptopMinWidth:py-5 laptopMinWidth:border-0 laptopMinWidth:pr-[8rem] desktopMinWidth:pr-[15rem]`}
             >
               I build graphic design, minimalist landing page, motion graphic or
               explainer video. Accessible, inclusive products for social media
               and the web
             </p>
           </div>
-          <div className="relative overflow-hidden rounded-full bg-gradient-to-b from-stone-500 w-72 h-72 mt-10 tabletMinWidth:w-96 tabletMinWidth:h-96 laptopMinWidth:rounded-none laptopMinWidth:h-[30rem] fullHdMinWidth:w-[30rem] fullHdMinWidth:h-[40rem]">
+          <div className="relative overflow-hidden rounded-full bg-gradient-to-b from-stone-500 w-72 h-72 mt-10 tabletMinWidth:w-96 tabletMinWidth:h-96 laptopMinWidth:rounded-none laptopMinWidth:h-[30rem] laptopMinWidth:w-[20rem] fullHdMinWidth:w-[38rem] fullHdMinWidth:h-[40rem]">
             <Image
               className="object-top"
               src={vectorCharacterHome}
               alt="Picture of the home"
               fill
-              sizes="100vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               style={{ objectFit: "cover" }}
               placeholder="blur"
             />

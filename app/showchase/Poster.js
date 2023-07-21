@@ -18,12 +18,6 @@ const cinzelFont = Cinzel({
   weight: ["500"],
 });
 
-const cinzelFont400 = Cinzel({
-  style: ["normal"],
-  subsets: ["latin"],
-  weight: ["400"],
-});
-
 // image background home import ----------------------------------------------------
 
 import brainStroming from "../../public/aset poster/bg-poster.jpg";
@@ -39,7 +33,7 @@ import drinkBeverage from "../../public/aset poster/pic-5.jpg";
 const Poster = () => {
   return (
     <>
-      <section className="section-without-minheight">
+      <section id="poster" className="section-without-minheight">
         <div className="relative flex flex-col flex-1 justify-center items-center w-full h-full px-5 py-20 tabletMinWidth:px-10 tabletMinWidth:py-32 laptopMinWidth:px-20">
           <div className="relative flex-1 text-center">
             <h1
@@ -57,71 +51,78 @@ const Poster = () => {
             <div className="relative w-full h-[15rem] col-span-4 tabletMinWidth:h-[25rem] tabletMinWidth:col-span-4 laptopMinWidth:h-[35rem] laptopMinWidth:col-span-4 fullHdMinWidth:h-[50rem]">
               <Image
                 src={brainStroming}
+                alt="brainStroming"
                 fill
                 quality={100}
                 placeholder="blur"
                 style={{ objectFit: "cover" }}
-                sizes="100vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <div className="relative w-full h-[15rem] col-span-2 tabletMinWidth:h-[25rem] tabletMinWidth:col-span-2 laptopMinWidth:h-[35rem] laptopMinWidth:col-span-2 fullHdMinWidth:h-[55rem]">
               <Image
                 src={adventure}
+                alt="adventure"
                 fill
                 quality={100}
                 placeholder="blur"
                 style={{ objectFit: "cover" }}
-                sizes="100vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <div className="relative w-full h-[15rem] col-span-2 tabletMinWidth:col-span-2 tabletMinWidth:h-[25rem] laptopMinWidth:h-[35rem] laptopMinWidth:col-span-2 fullHdMinWidth:h-[55rem]">
               <Image
                 src={drinkBeverage}
+                alt="drinkBeverage"
                 fill
                 quality={100}
                 placeholder="blur"
                 style={{ objectFit: "cover" }}
-                sizes="100vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <div className="relative w-full h-[15rem] col-span-2 tabletMinWidth:col-span-1 laptopMinWidth:h-[20rem] laptopMinWidth:col-span-1 fullHdMinWidth:h-[30rem]">
               <Image
                 src={cosmetic}
+                alt="cosmetic"
                 fill
                 quality={100}
                 placeholder="blur"
                 style={{ objectFit: "cover" }}
-                sizes="100vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <div className="relative w-full h-[15rem] col-span-2 tabletMinWidth:col-span-1 laptopMinWidth:h-[20rem] laptopMinWidth:col-span-1 fullHdMinWidth:h-[30rem]">
               <Image
                 src={letsHunting}
+                alt="letsHunting"
                 fill
                 quality={100}
                 placeholder="blur"
                 style={{ objectFit: "cover" }}
-                sizes="100vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <div className="relative w-full h-[15rem] col-span-2 tabletMinWidth:col-span-2 laptopMinWidth:h-[20rem] laptopMinWidth:col-span-1 fullHdMinWidth:h-[30rem]">
               <Image
                 src={comfortZone}
+                alt="comfortZone"
                 fill
                 quality={100}
                 placeholder="blur"
                 style={{ objectFit: "cover" }}
-                sizes="100vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <div className="relative w-full h-[15rem] col-span-2 tabletMinWidth:h-[40rem] tabletMinWidth:col-span-4 laptopMinWidth:h-[20rem] laptopMinWidth:col-span-1 fullHdMinWidth:h-[30rem]">
               <Image
                 src={barberShop}
+                alt="barberShop"
                 fill
                 quality={100}
                 placeholder="blur"
                 style={{ objectFit: "cover" }}
-                sizes="100vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
           </div>

@@ -3,7 +3,6 @@
 import NavbarSections from "./components/Navbar";
 import HomeNavbarSections from "./components/Home";
 import AboutSections from "./components/About";
-import PortfolioSections from "./components/Portfolio";
 import ClosingSections from "./components/Closing";
 
 // main app --------------------------------------------------------------------------
@@ -14,7 +13,6 @@ export default function Home() {
       <NavbarSections />
       <HomeNavbarSections />
       <AboutSections />
-      <PortfolioSections />
       <ClosingSections />
     </main>
   );

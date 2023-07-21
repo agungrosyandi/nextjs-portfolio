@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { useState } from "react";
 
 // font import ----------------------------------------------------
 
@@ -17,12 +16,6 @@ const cinzelFont = Cinzel({
   style: ["normal"],
   subsets: ["latin"],
   weight: ["500"],
-});
-
-const cinzelFont400 = Cinzel({
-  style: ["normal"],
-  subsets: ["latin"],
-  weight: ["400"],
 });
 
 // image background home import ----------------------------------------------------
@@ -60,7 +53,7 @@ const Contact = () => {
                   alt="whatapps"
                   fill
                   style={{ objectFit: "cover" }}
-                  sizes="100vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </a>
             </div>
@@ -72,7 +65,7 @@ const Contact = () => {
                   alt="email"
                   fill
                   style={{ objectFit: "cover" }}
-                  sizes="100vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </a>
             </div>
@@ -82,9 +75,10 @@ const Contact = () => {
           <Image
             className="object-top"
             src={characterContact}
+            alt="characterContact"
             fill
             style={{ objectFit: "cover" }}
-            sizes="100vw"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
       </div>

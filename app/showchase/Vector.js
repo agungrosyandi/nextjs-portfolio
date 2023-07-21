@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 // font import ----------------------------------------------------
 
@@ -21,12 +20,6 @@ const cinzelFont = Cinzel({
   weight: ["500"],
 });
 
-const cinzelFont400 = Cinzel({
-  style: ["normal"],
-  subsets: ["latin"],
-  weight: ["400"],
-});
-
 // image import ----------------------------------------------------
 
 import characterVector from "../../public/aset vector/character animation-01.jpg";
@@ -39,7 +32,7 @@ import catVector from "../../public/aset vector/illustrator 3.jpg";
 
 const Vector = () => {
   return (
-    <section className="section-without-minheight">
+    <section id="vector" className="section-without-minheight">
       <div className="relative flex flex-col flex-1 justify-center items-center w-full h-full px-5 py-20 tabletMinWidth:px-10 tabletMinWidth:py-32 laptopMinWidth:px-20">
         <div className="relative flex-1 text-center">
           <h1
@@ -55,19 +48,19 @@ const Vector = () => {
         </div>
         <div className="grid grid-cols-4 grid-flow-row gap-1 py-5 tabletMinWidth:py-10 laptopMinWidth:border-t laptopMinWidth:border-gray-600 ">
           <div className="flex-1 col-span-4 ">
-            <Image src={characterVector} />
+            <Image src={characterVector} alt="characterVector" />
           </div>
           <div className="flex-1 col-span-2 laptopMinWidth:col-span-1">
-            <Image src={dogVector} />
+            <Image src={dogVector} alt="dogVector" />
           </div>
           <div className="flex-1 col-span-2 laptopMinWidth:col-span-1">
-            <Image src={dog2Vector} />
+            <Image src={dog2Vector} alt="dog2Vector" />
           </div>
           <div className="flex-1 col-span-2 laptopMinWidth:col-span-1">
-            <Image src={catRockVector} />
+            <Image src={catRockVector} alt="catRockVector" />
           </div>
           <div className=" flex-1 col-span-2 laptopMinWidth:col-span-1">
-            <Image src={catVector} />
+            <Image src={catVector} alt="catVector" />
           </div>
         </div>
       </div>

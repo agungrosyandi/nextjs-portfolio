@@ -19,18 +19,29 @@ const cinzelFont = Cinzel({
   weight: ["500"],
 });
 
+const cinzelFont400 = Cinzel({
+  style: ["normal"],
+  subsets: ["latin"],
+  weight: ["500"],
+});
+
 const Closing = () => {
   return (
     <section className="relative w-screen">
       <div className="relative flex flex-col justify-center items-center w-full h-full text-center px-5 py-20 tabletMinWidth:px-20 tabletMinWidth:py-32 laptopMinWidth:flex-row laptopMinWidth:py-20 laptopMinWidth:px-20 desktopMinWidth:py-32">
         <div className="relative flex-1 text-center laptopMinWidth:text-start">
+          <p
+            className={`font-NelaSlabLight text-lg py-5 tabletMinWidth:text-2xl fullHdMinWidth:text-3xl`}
+          >
+            Interesting isn't ? :)
+          </p>
           <div
-            className={`${cinzelFont.className} text-[3.5rem] leading-tight tabletMinWidth:text-[6rem] laptopMinWidth:text-[5rem] desktopMinWidth:text-[6rem] fullHdMinWidth:text-[7rem]`}
+            className={`${cinzelFont.className} text-[3.5rem] leading-tight tabletMinWidth:text-[5rem] fullHdMinWidth:text-[6rem]`}
           >
             <h1>Lets Working Together</h1>
           </div>
           <p
-            className={`${montserratParagraph.className} text-sm py-5 px-10 tabletMinWidth:text-lg tabletMinWidth:py-10 laptopMinWidth:px-0 laptopMinWidth:pt-5 fullHdMinWidth:text-2xl`}
+            className={`${montserratParagraph.className} text-sm py-5 px-10 tabletMinWidth:text-lg tabletMinWidth:py-10 laptopMinWidth:px-0 laptopMinWidth:pt-5`}
           >
             Dont hestitate to contact me if you need my service
           </p>
@@ -48,7 +59,7 @@ const Closing = () => {
             src={vectorCharacterClosing}
             alt="Picture of the home"
             fill
-            sizes="100vw"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             style={{ objectFit: "cover" }}
             placeholder="blur"
           />
