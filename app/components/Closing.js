@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Montserrat } from "next/font/google";
 import { Cinzel } from "next/font/google";
 
-import vectorCharacterClosing from "../../public/character for react portfolio-03.png";
+import vectorCharacterClosing from "../../public/aset vector/closing vector.png";
 
 const montserratParagraph = Montserrat({
   style: ["normal"],
@@ -53,7 +53,7 @@ const Closing = () => {
             </Link>
           </div>
         </div>
-        <div className="relative overflow-hidden hidden laptopMinWidth:block laptopMinWidth:bg-gradient-to-b laptopMinWidth:from-stone-500 laptopMinWidth:h-[30rem] laptopMinWidth:w-[20rem] fullHdMinWidth:w-[40rem] fullHdMinWidth:h-[40rem]">
+        <div className="relative overflow-hidden hidden laptopMinWidth:block laptopMinWidth:bg-gradient-to-b laptopMinWidth:from-stone-500 laptopMinWidth:h-[30rem] laptopMinWidth:w-[20rem] fullHdMinWidth:w-[34rem] fullHdMinWidth:h-[40rem]">
           <Image
             className="object-top"
             src={vectorCharacterClosing}

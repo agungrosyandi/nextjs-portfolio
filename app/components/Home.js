@@ -3,7 +3,7 @@ import Image from "next/image";
 
 // image background home import ----------------------------------------------------
 
-import vectorCharacterHome from "../../public/character for react portfolio-02.png";
+import vectorCharacterHome from "../../public/aset vector/home vector.png";
 
 // font import ----------------------------------------------------
 
@@ -63,7 +63,7 @@ const Home = () => {
               and the web
             </p>
           </div>
-          <div className="relative overflow-hidden rounded-full bg-gradient-to-b from-stone-500 w-72 h-72 mt-10 tabletMinWidth:w-96 tabletMinWidth:h-96 laptopMinWidth:rounded-none laptopMinWidth:h-[30rem] laptopMinWidth:w-[20rem] fullHdMinWidth:w-[38rem] fullHdMinWidth:h-[40rem]">
+          <div className="relative overflow-hidden rounded-full bg-gradient-to-b from-stone-500 w-72 h-72 mt-10 tabletMinWidth:w-96 tabletMinWidth:h-96 laptopMinWidth:rounded-none laptopMinWidth:h-[30rem] laptopMinWidth:w-[20rem] fullHdMinWidth:w-[34rem] fullHdMinWidth:h-[40rem]">
             <Image
               className="object-top"
               src={vectorCharacterHome}

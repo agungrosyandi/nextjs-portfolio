@@ -4,9 +4,9 @@ import Link from "next/link";
 
 // image import ----------------------------------------------------------------------
 
-import graphicDesignVector from "../../public/poster.png";
-import landingPageVector from "../../public/landing page.png";
-import motionGraphicVector from "../../public/motion .png";
+import graphicDesignVector from "../../public/aset vector/design character vector.png";
+import landingPageVector from "../../public/aset vector/landing page character vector.png";
+import motionGraphicVector from "../../public/aset vector/motion character vector.png";
 
 // font import ----------------------------------------------------------------------
 
@@ -123,11 +123,11 @@ const About = () => {
               target="_blank"
             >
               <CardSkillsRight
-                image={landingPageVector}
-                name={"Landing Page"}
-                subName={"HTML, CSS, Javascript"}
+                image={motionGraphicVector}
+                name={"Motion Graphic"}
+                subName={"Adobe After Effect, Premierre Pro"}
                 description={
-                  "In the era Digitalization 4.0, graphic and video content stil not enough to make your content special and unique, so build your content to the web development, make your brand look more profesional."
+                  "Used raw material output from photoshop, illustrator and premierre pro such a pixel, vector and cinematic material, make distinct content with motion graphic style to get more audience and incerease engagment rate on social media"
                 }
               />
             </Link>
@@ -135,11 +135,11 @@ const About = () => {
           <div className="text-center shadow-lg p-4 my-5 rounded-xl">
             <Link href="/showchase#motion" target="_blank">
               <CardSkills
-                image={motionGraphicVector}
-                name={"Motion Graphic"}
-                subName={"Adobe After Effect, Premierre Pro"}
+                image={landingPageVector}
+                name={"Landing Page"}
+                subName={"HTML, CSS, Javascript"}
                 description={
-                  "Used raw material output from photoshop, illustrator and premierre pro such a pixel, vector and cinematic material, make distinct content with motion graphic style to get more audience and incerease engagment rate on social media"
+                  "In the era Digitalization 4.0, graphic and video content stil not enough to make your content special and unique, so build your content to the web development, make your brand look more profesional."
                 }
               />
             </Link>

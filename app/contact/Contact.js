@@ -20,7 +20,7 @@ const cinzelFont = Cinzel({
 
 // image background home import ----------------------------------------------------
 
-import characterContact from "../../public/aset vector/closing character gallery web-01.png";
+import characterContact from "../../public/aset vector/contact character vector.png";
 import WaContact from "../../public/aset vector/wa contact vector.jpg";
 import EmailContact from "../../public/aset vector/email contact vector.jpg";
 

@@ -22,7 +22,7 @@ const cinzelFont = Cinzel({
 
 // image import ----------------------------------------------------
 
-import characterVector from "../../public/aset vector/character animation-01.jpg";
+import characterVector from "../../public/aset vector/character-animation.jpg";
 import dogVector from "../../public/aset vector/illustrator 1.jpg";
 import dog2Vector from "../../public/aset vector/illustrator 2.jpg";
 import catRockVector from "../../public/aset vector/illustrator 4.jpg";

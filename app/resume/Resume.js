@@ -19,15 +19,9 @@ const cinzelFont = Cinzel({
   weight: ["500"],
 });
 
-const cinzelFont400 = Cinzel({
-  style: ["normal"],
-  subsets: ["latin"],
-  weight: ["400"],
-});
-
 // image background home import ----------------------------------------------------
 
-import characterResume from "../../public/aset vector/closing character gallery web-02.png";
+import characterResume from "../../public/aset vector/resume character vector.png";
 
 // main component ----------------------------------------------------
 
