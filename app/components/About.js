@@ -118,10 +118,7 @@ const About = () => {
             </Link>
           </div>
           <div className="text-center shadow-lg p-4 my-5 rounded-xl">
-            <Link
-              href="https://narasihistorian.github.io/historia/"
-              target="_blank"
-            >
+            <Link href="/showchase#motion" target="_blank">
               <CardSkillsRight
                 image={motionGraphicVector}
                 name={"Motion Graphic"}
@@ -133,7 +130,7 @@ const About = () => {
             </Link>
           </div>
           <div className="text-center shadow-lg p-4 my-5 rounded-xl">
-            <Link href="/showchase#motion" target="_blank">
+            <Link href="https://narasihistorian.netlify.app/" target="_blank">
               <CardSkills
                 image={landingPageVector}
                 name={"Landing Page"}
