@@ -89,20 +89,25 @@ const VideoNarasiHistorian = () => {
 const Motion = () => {
   return (
     <section id="motion" className="section-without-minheight">
-      <div className="relative flex flex-col flex-1 justify-center items-center w-full h-full px-5 py-20 tabletMinWidth:px-10 tabletMinWidth:py-32 laptopMinWidth:px-20">
-        <div className="relative flex-1 text-center">
+      <div className="relative flex flex-col flex-1 justify-center items-center w-full h-full px-5 pt-5 pb-20 tabletMinWidth:px-10 tabletMinWidth:pt-20 tabletMinWidth:pb-32 laptopMinWidth:px-20">
+        <div className="relative flex-1">
           <h1
-            className={`${cinzelFont.className} text-[4rem] leading-none pt-4 tabletMinWidth:text-[6rem]`}
+            className={`font-MonaSansUltraLighNarrow text-6xl pt-4 tabletMinWidth:text-7xl laptopMinWidth:text-8xl fullHdMinWidth:text-9xl`}
           >
             Motion Graphic
           </h1>
           <p
-            className={`${montserratParagraph.className} text-xs p-5 border-b border-gray-600 tabletMinWidth:text-lg laptopMinWidth:border-0`}
+            className={`font-MonaSansUltraLight text-xs pt-5 pr-5 pb-5 border-b border-gray-600 tabletMinWidth:text-base laptopMinWidth:text-lg fullHdMinWidth:text-2xl`}
           >
-            Make high quality video for digital content
+            To make motion graphic content, I’m always using After Effect with
+            raw material asset i create from Premierre pro for cinemation,
+            Illustrator for vector, and photoshop for pixel. Sometime if
+            neccesary, depends on situations, i’m using 3rd party from plugin
+            and also recreate assets from the bundle to save a time and make my
+            work more faster.
           </p>
         </div>
-        <div className="overflow-hidden w-full h-full grid grid-cols-4 grid-flow-row gap-1 py-5 tabletMinWidth:py-10 laptopMinWidth:grid-cols-3 laptopMinWidth:border-t laptopMinWidth:border-gray-600 ">
+        <div className="overflow-hidden w-full h-full grid grid-cols-4 grid-flow-row gap-1 py-5 border-b border-gray-600 tabletMinWidth:py-10 laptopMinWidth:grid-cols-3">
           <div className="relative col-span-2 laptopMinWidth:col-span-1 ">
             <VideoGif alt="motiongraphic" />
           </div>

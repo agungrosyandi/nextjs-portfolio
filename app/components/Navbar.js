@@ -1,20 +1,20 @@
-import React from 'react';
-import { useState, useRef, useEffect } from 'react';
-import Link from 'next/link';
+import React from "react";
+import { useState, useRef, useEffect } from "react";
+import Link from "next/link";
 // import { gsap, Power3 } from "gsap";
 
 // icons import ----------------------------------------------------
 
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 // font import ----------------------------------------------------
 
-import { Cinzel } from 'next/font/google';
+import { Cinzel } from "next/font/google";
 
 const cinzelFont400 = Cinzel({
-  style: ['normal'],
-  subsets: ['latin'],
-  weight: ['400'],
+  style: ["normal"],
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 // main component --------------------------------------------------
@@ -38,11 +38,8 @@ const Navbar = () => {
           <li className="pr-5">
             <Link href="/resume">Resume</Link>
           </li>
-          <li className="pr-5">
+          <li className="">
             <Link href="/showchase">Showchase</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact</Link>
           </li>
         </ul>
 
@@ -55,8 +52,8 @@ const Navbar = () => {
         <div
           className={
             !nav
-              ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-gray-100 ease-in-out duration-500 z-20'
-              : 'fixed left-[-100%]'
+              ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-gray-100 ease-in-out duration-500 z-20"
+              : "fixed left-[-100%]"
           }
         >
           <h1 className="text-logoNavbar p-5">AGUNG</h1>
@@ -68,16 +65,13 @@ const Navbar = () => {
             <li className="p-5 border-b border-gray-600">
               <Link href="/showchase">Showchase</Link>
             </li>
-            <li className="p-5">
-              <Link href="/contact">Contact</Link>
-            </li>
           </ul>
         </div>
         <div
           className={
             !nav
-              ? 'fixed left-0 top-0 w-screen h-screen backdrop-blur-sm bg-white/30 ease-in-out duration-500 '
-              : 'fixed'
+              ? "fixed left-0 top-0 w-screen h-screen backdrop-blur-sm bg-white/30 ease-in-out duration-500 "
+              : "fixed"
           }
         ></div>
       </nav>

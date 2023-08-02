@@ -11,15 +11,8 @@ import motionGraphicVector from "../../public/aset vector/motion character vecto
 // font import ----------------------------------------------------------------------
 
 import { Montserrat } from "next/font/google";
-import { Cinzel } from "next/font/google";
 
 const montserratParagraph = Montserrat({
-  style: ["normal"],
-  subsets: ["latin"],
-  weight: ["400"],
-});
-
-const cinzelFont400 = Cinzel({
   style: ["normal"],
   subsets: ["latin"],
   weight: ["400"],
@@ -37,19 +30,19 @@ const CardSkills = (props) => {
           <Image className="pb-5" alt="pic" src={props.image} />
         </div>
         <div className="flex-1 text-center laptopMinWidth:text-start">
-          <h6 className="font-NelaSlabLight text-3xl tabletMinWidth:text-5xl ">
+          <h6 className="font-MonaSansUltraLightWide text-4xl tabletMinWidth:text-6xl ">
             {props.name}
           </h6>
-          <p className="p-5 pb-5 text-sm font-bold tabletMinWidth:text-base laptopMinWidth:pl-0">
+          <p className="p-5 pb-5 font-MonaSansLight text-sm font-bold tabletMinWidth:text-lg laptopMinWidth:pl-0">
             Tools: {props.subName}
           </p>
           <p
-            className={`${montserratParagraph.className} px-5 pb-5 text-xs tabletMinWidth:text-base laptopMinWidth:pl-0`}
+            className={`font-MonaSansUltraLight px-5 pb-5 text-xs tabletMinWidth:text-base laptopMinWidth:pl-0`}
           >
             {props.description}
           </p>
           <div className="pb-10">
-            <button className="rounded-full shadow shadow-black/60 bg-transparent py-2 px-10 text-sm capitalize laptopMinWidth:text-base desktopMinWidth:text-lg">
+            <button className="rounded-full shadow shadow-black/60 bg-transparent py-2 px-10 text-sm capitalize tabletMinWidth:text-base">
               Explore
             </button>
           </div>
@@ -69,19 +62,19 @@ const CardSkillsRight = (props) => {
           <Image className="pb-5" alt="pic" src={props.image} />
         </div>
         <div className="flex-1 text-center laptopMinWidth:text-start">
-          <h6 className="font-NelaSlabLight text-3xl tabletMinWidth:text-5xl laptopMinWidth:pl-10">
+          <h6 className="font-MonaSansUltraLightWide text-4xl tabletMinWidth:text-6xl laptopMinWidth:pl-10">
             {props.name}
           </h6>
-          <p className="p-5 pb-5 text-sm font-bold tabletMinWidth:text-base laptopMinWidth:pl-10">
+          <p className="p-5 pb-5 font-MonaSansLight font-bold text-sm tabletMinWidth:text-lg laptopMinWidth:pl-10">
             Tools: {props.subName}
           </p>
           <p
-            className={`${montserratParagraph.className} px-5 pb-5 text-xs tabletMinWidth:text-base laptopMinWidth:pl-10`}
+            className={`font-MonaSansUltraLight px-5 pb-5 text-xs tabletMinWidth:text-base laptopMinWidth:pl-10`}
           >
             {props.description}
           </p>
           <div className="pb-10 laptopMinWidth:pl-10">
-            <button className="rounded-full shadow shadow-black/60 bg-transparent py-2 px-10 text-sm capitalize laptopMinWidth:text-base desktopMinWidth:text-lg">
+            <button className="rounded-full shadow shadow-black/60 bg-transparent py-2 px-10 text-sm capitalize tabletMinWidth:text-base">
               Explore
             </button>
           </div>
@@ -96,13 +89,24 @@ const CardSkillsRight = (props) => {
 const About = () => {
   return (
     <section className="relative w-screen min-h-screen">
-      <div className="relative overflow-hidden py-10 px-5 w-full h-full laptopMinWidth:px-20">
-        <div className=" relative flex flex-1 flex-col items-center text-center pb-5 border-b border-gray-600 tabletMinWidth:border-none">
+      <div className="relative overflow-hidden py-20 px-5 w-full h-full tabletMinWidth:px-10 laptopMinWidth:px-20">
+        <div className=" relative flex flex-1 flex-col items-center text-center laptopMinWidth:text-start laptopMinWidth:items-start fullHdMinWidth:pb-5 fullHdMinWidth:mb-10 fullHdMinWidth:border-b fullHdMinWidth:border-gray-600 ">
           <h3
-            className={`${cinzelFont400.className} text-5xl tabletMinWidth:text-7xl`}
+            className={`font-MonaSansUltraLightWide text-3xl tabletMinWidth:text-6xl fullHdMinWidth:text-8xl`}
           >
             My Area of Expertise
           </h3>
+          <p className="font-MonaSansUltraLight text-xs py-5 px-5 tabletMinWidth:text-base laptopMinWidth:pl-0 fullHdMinWidth:text-lg fullHdMinWidth:w-[80%]">
+            In Design, my technique based on minimalist and simplistic style,
+            that’s means “ go for less but meaningful “. The less elements there
+            are to bombard the viewer, focus on the product or idea being
+            showcased. This means using limited layouts and color palettes while
+            still making available only the most useful tools, such as intuitive
+            and easy-to-find navigational elements. <br /> <br />{" "}
+            <span className="font-MonaSansLight font-bold">
+              Here case study on my work recently.
+            </span>
+          </p>
         </div>
         <div className="flex flex-1 flex-wrap justify-center items-center gap-6">
           <div className="text-center shadow-lg p-4 my-5 rounded-xl">
@@ -112,7 +116,7 @@ const About = () => {
                 name={"Graphic Design"}
                 subName={"Adobe Illustrator, Photoshop"}
                 description={
-                  "used the photoshop and also raw material asset from the internet, make design with positive and negatif space perspective and mixed with gradient color, image costum font and so on, the output will looks beautiful and also minimalist"
+                  "Make design with positive and negative space perspective, and mixed with gradient color, image costum font and so on. The output will looks beautiful and also minimalist, good for social media or commercial."
                 }
               />
             </Link>
@@ -124,7 +128,7 @@ const About = () => {
                 name={"Motion Graphic"}
                 subName={"Adobe After Effect, Premierre Pro"}
                 description={
-                  "Used raw material output from photoshop, illustrator and premierre pro such a pixel, vector and cinematic material, make distinct content with motion graphic style to get more audience and incerease engagment rate on social media"
+                  "Create distinct content with motion graphic or cinematic style to get more audience. Increase engagement rate your bussines"
                 }
               />
             </Link>

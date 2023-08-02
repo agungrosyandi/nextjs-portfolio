@@ -19,6 +19,38 @@
   src: url("../font/DrukTextWide-Bold-Trial.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "MonaSansUltraLightWide";
+  src: url("../font/Mona-Sans.woff2") format("woff2 supports variations"),
+    url("../font/Mona-Sans.woff2") format("woff2-variations");
+  font-weight: 200;
+  font-stretch: 125%;
+}
+
+@font-face {
+  font-family: "MonaSansUltraLightNarrow";
+  src: url("../font/Mona-Sans.woff2") format("woff2 supports variations"),
+    url("../font/Mona-Sans.woff2") format("woff2-variations");
+  font-weight: 200;
+  font-stretch: 75%;
+}
+
+@font-face {
+  font-family: "MonaSansUltraLight";
+  src: url("../font/Mona-Sans.woff2") format("woff2 supports variations"),
+    url("../font/Mona-Sans.woff2") format("woff2-variations");
+  font-weight: 200;
+  font-stretch: 100%;
+}
+
+@font-face {
+  font-family: "MonaSansLight";
+  src: url("../font/Mona-Sans.woff2") format("woff2 supports variations"),
+    url("../font/Mona-Sans.woff2") format("woff2-variations");
+  font-weight: 300;
+  font-stretch: 100%;
+}
+
 :root {
   scroll-behavior: smooth;
   overflow-x: hidden;

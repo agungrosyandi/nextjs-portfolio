@@ -2,28 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { Montserrat } from "next/font/google";
-import { Cinzel } from "next/font/google";
-
 import vectorCharacterClosing from "../../public/aset vector/closing vector.png";
 
-const montserratParagraph = Montserrat({
-  style: ["normal"],
-  subsets: ["latin"],
-  weight: ["400"],
-});
-
-const cinzelFont = Cinzel({
-  style: ["normal"],
-  subsets: ["latin"],
-  weight: ["500"],
-});
-
-const cinzelFont400 = Cinzel({
-  style: ["normal"],
-  subsets: ["latin"],
-  weight: ["500"],
-});
+// main component --------------------------------------------------------------------------
 
 const Closing = () => {
   return (
@@ -31,29 +12,29 @@ const Closing = () => {
       <div className="relative flex flex-col justify-center items-center w-full h-full text-center px-5 py-20 tabletMinWidth:px-20 tabletMinWidth:py-32 laptopMinWidth:flex-row laptopMinWidth:py-20 laptopMinWidth:px-20 desktopMinWidth:py-32">
         <div className="relative flex-1 text-center laptopMinWidth:text-start">
           <p
-            className={`font-NelaSlabLight text-lg py-5 tabletMinWidth:text-2xl fullHdMinWidth:text-3xl`}
+            className={`font-MonaSansUltraLighNarrow text-2xl pb-5 tabletMinWidth:text-3xl fullHdMinWidth:text-4xl`}
           >
             Interesting isn't ? :)
           </p>
           <div
-            className={`${cinzelFont.className} text-[3.5rem] leading-tight tabletMinWidth:text-[5rem] fullHdMinWidth:text-[6rem]`}
+            className={`font-MonaSansUltraLightWide text-5xl tabletMinWidth:text-6xl fullHdMinWidth:text-8xl`}
           >
             <h1>Lets Working Together</h1>
           </div>
           <p
-            className={`${montserratParagraph.className} text-sm py-5 px-10 tabletMinWidth:text-lg tabletMinWidth:py-10 laptopMinWidth:px-0 laptopMinWidth:pt-5`}
+            className={`font-MonaSansLight text-sm py-6 px-10 tabletMinWidth:text-lg tabletMinWidth:py-8 laptopMinWidth:px-0 laptopMinWidth:pt-5 fullHdMinWidth:text-lg`}
           >
             Dont hestitate to contact me if you need my service
           </p>
-          <div className="relative py-2 tableteMinWidth:py-10 laptopMinWidth:justify-start">
-            <Link href="/contact">
-              <button className="font-NelaSlabLight text-sm border-2 border-gray-600 py-1 px-3 rounded-full tabletMinWidth:text-2xl tabletMinWidth:py-2 tabletMinWidth:px-5 ">
-                Contact me
+          <div className="relative tableteMinWidth:py-10 laptopMinWidth:justify-start">
+            <Link href="mailto:agungrosyandi@gmail.com">
+              <button className="text-sm border-2 border-gray-500 py-2 px-7 rounded-full tabletMinWidth:text-base ">
+                Say Hello
               </button>
             </Link>
           </div>
         </div>
-        <div className="relative overflow-hidden hidden laptopMinWidth:block laptopMinWidth:bg-gradient-to-b laptopMinWidth:from-stone-500 laptopMinWidth:h-[30rem] laptopMinWidth:w-[20rem] fullHdMinWidth:w-[34rem] fullHdMinWidth:h-[40rem]">
+        <div className="relative overflow-hidden hidden laptopMinWidth:block laptopMinWidth:bg-gradient-to-b laptopMinWidth:from-stone-500 laptopMinWidth:h-[30rem] laptopMinWidth:w-[20rem] fullHdMinWidth:w-[34rem] fullHdMinWidth:h-[44rem]">
           <Image
             className="object-top"
             src={vectorCharacterClosing}
