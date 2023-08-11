@@ -4,7 +4,7 @@ import Link from "next/link";
 
 // image background home import ----------------------------------------------------
 
-import vectorCharacterHome from "../../public/aset vector/home vector.png";
+import vectorCharacterHome from "../../public/aset vector/closing vector.png";
 import graphicDesignVector from "../../public/aset vector/design character vector.png";
 import landingPageVector from "../../public/aset vector/landing page character vector.png";
 import ClosingPageVector from "../../public/aset vector/contact character vector.png";
@@ -32,7 +32,7 @@ const Biography = (props) => {
               {props.description}
             </p>
           </div>
-          <div className="relative overflow-hidden rounded-full bg-gradient-to-b from-stone-400 w-[15rem] h-[15rem] mt-10 tabletMinWidth:h-[25rem] tabletMinWidth:w-[25rem] laptopMinWidth:w-[30rem] laptopMinWidth:h-[30rem]">
+          <div className="relative overflow-hidden rounded-full bg-gradient-to-b from-gray-200 w-[15rem] h-[15rem] mt-10 tabletMinWidth:h-[25rem] tabletMinWidth:w-[25rem] laptopMinWidth:w-[20rem] laptopMinWidth:h-[20rem] fullHdMinWidth:w-[30rem] fullHdMinWidth:h-[30rem]">
             <Image
               className="object-top"
               src={props.image}
@@ -185,7 +185,7 @@ const Home = () => {
                   </p>
                   <div className="relative tableteMinWidth:py-10 laptopMinWidth:justify-start">
                     <Link href="mailto:agungrosyandi@gmail.com">
-                      <button className="text-sm border-2 border-gray-500 py-2 px-7 rounded-full tabletMinWidth:text-base ">
+                      <button className="rounded-full shadow shadow-black/60 bg-transparent py-2 px-10 text-sm capitalize tabletMinWidth:text-base">
                         Say Hello
                       </button>
                     </Link>
@@ -194,7 +194,7 @@ const Home = () => {
 
                 {/* vector pic closing ------------------------------------------------------------------- */}
 
-                <div className="relative overflow-hidden hidden laptopMinWidth:block laptopMinWidth:bg-gradient-to-b laptopMinWidth:from-stone-500 laptopMinWidth:rounded-full laptopMinWidth:h-[20rem] laptopMinWidth:w-[20rem]">
+                <div className="relative overflow-hidden hidden laptopMinWidth:block laptopMinWidth:bg-gradient-to-b laptopMinWidth:from-gray-200 laptopMinWidth:rounded-full laptopMinWidth:h-[20rem] laptopMinWidth:w-[20rem]">
                   <Image
                     className="object-top"
                     src={ClosingPageVector}

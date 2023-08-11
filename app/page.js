@@ -7,7 +7,7 @@ import AppSections from "./components/App";
 
 export default function Home() {
   return (
-    <main className="bg-white">
+    <main className="bg-gray-100">
       <NavbarSections />
       <AppSections />
     </main>

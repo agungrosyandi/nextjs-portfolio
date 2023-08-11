@@ -31,7 +31,7 @@ const Navbar = () => {
       <nav
         className={`${montserrat.className} fixed w-screen z-10 p-5 laptopMinWidth:px-10`}
       >
-        <div className="bg-stone-100 w-full flex items-center justify-between py-2 px-5 rounded-[20px]">
+        <div className="bg-stone-100 w-full shadow-xl flex items-center justify-between py-2 px-5 rounded-[20px]">
           <h1 className="text-base laptopMinWidth:text-lg">
             <Link href="/">My Biography</Link>
           </h1>

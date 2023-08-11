@@ -10,7 +10,7 @@ import ClosingSections from "./Closing";
 
 export default function Showchase() {
   return (
-    <main className="bg-white">
+    <main className="bg-gray-100">
       <VectorSections />
       <PosterSections />
       <MotionSections />
