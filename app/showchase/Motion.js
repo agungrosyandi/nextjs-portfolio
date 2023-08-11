@@ -89,7 +89,7 @@ const VideoNarasiHistorian = () => {
 const Motion = () => {
   return (
     <section id="motion" className="section-without-minheight">
-      <div className="relative flex flex-col flex-1 justify-center items-center w-full h-full px-5 pt-5 pb-20 tabletMinWidth:px-10 tabletMinWidth:pt-20 tabletMinWidth:pb-32 laptopMinWidth:px-20">
+      <div className="relative flex flex-col flex-1 justify-center items-center w-full h-full px-5 pt-5 pb-5 tabletMinWidth:px-10 tabletMinWidth:pb-10 tabletMinWidth:pt-10 laptopMinWidth:px-20">
         <div className="relative flex-1">
           <h1
             className={`font-MonaSansUltraLighNarrow text-6xl pt-4 tabletMinWidth:text-7xl laptopMinWidth:text-8xl fullHdMinWidth:text-9xl`}

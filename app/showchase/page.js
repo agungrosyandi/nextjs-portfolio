@@ -1,19 +1,21 @@
 "use client";
 
-import NavbarSections from "../components/Navbar";
 import PosterSections from "./Poster";
 import VectorSections from "./Vector";
 import MotionSections from "./Motion";
+import LandingPageSections from "./LandingPage";
+import ClosingSections from "./Closing";
 
 // main component --------------------------------------------------
 
 export default function Showchase() {
   return (
     <main className="bg-white">
-      <NavbarSections />
-      <PosterSections />
       <VectorSections />
+      <PosterSections />
       <MotionSections />
+      <LandingPageSections />
+      <ClosingSections />
     </main>
   );
 }
