@@ -1,10 +1,7 @@
-"use client";
-
-import PosterSections from "./Poster";
-import VectorSections from "./Vector";
-import MotionSections from "./Motion";
-import LandingPageSections from "./LandingPage";
-import ClosingSections from "./Closing";
+import PosterSections from './Poster';
+import VectorSections from './Vector';
+import MotionSections from './Motion';
+import LandingPageSections from './LandingPage';
 
 // main component --------------------------------------------------
 
@@ -15,7 +12,6 @@ export default function Showchase() {
       <PosterSections />
       <MotionSections />
       <LandingPageSections />
-      <ClosingSections />
     </main>
   );
 }
