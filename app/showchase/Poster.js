@@ -1,12 +1,12 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 // image background home import ----------------------------------------------------
 
-import brainStroming from '../../public/aset poster/bg-poster.jpg';
-import letsHunting from '../../public/aset poster/pic-1.jpg';
-import comfortZone from '../../public/aset poster/pic-2.jpg';
-import barberShop from '../../public/aset poster/pic-3.jpg';
+import brainStroming from "../../public/aset poster/bg-poster.jpg";
+import letsHunting from "../../public/aset poster/pic-1.jpg";
+import comfortZone from "../../public/aset poster/pic-2.jpg";
+import barberShop from "../../public/aset poster/pic-3.jpg";
 
 // main component ----------------------------------------------------
 
@@ -32,16 +32,36 @@ const Poster = () => {
           </div>
           <div className="grid grid-cols-4 grid-flow-row gap-1 py-5 border-b border-gray-600 tabletMinWidth:py-10 laptopMinWidth:grid-cols-3">
             <div className="flex-1 col-span-4 laptopMinWidth:hidden">
-              <Image src={brainStroming} alt="brainStroming" />
+              <Image
+                src={brainStroming}
+                alt="brainStroming"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                placeholder="blur"
+              />
             </div>
             <div className="flex-1 col-span-4 tabletMinWidth:col-span-2 laptopMinWidth:col-span-1">
-              <Image src={letsHunting} alt="letsHunting" />
+              <Image
+                src={letsHunting}
+                alt="letsHunting"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                placeholder="blur"
+              />
             </div>
             <div className="flex-1 col-span-2 tabletMinWidth:col-span-2 laptopMinWidth:col-span-1">
-              <Image src={barberShop} alt="comfortZone" />
+              <Image
+                src={barberShop}
+                alt="comfortZone"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                placeholder="blur"
+              />
             </div>
             <div className="flex-1 col-span-2 tabletMinWidth:col-span-4 laptopMinWidth:col-span-1">
-              <Image src={comfortZone} alt="barberShop" />
+              <Image
+                src={comfortZone}
+                alt="barberShop"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                placeholder="blur"
+              />
             </div>
           </div>
         </div>

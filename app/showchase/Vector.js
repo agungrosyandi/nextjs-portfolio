@@ -1,13 +1,13 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 // image import ----------------------------------------------------
 
-import characterVector from '../../public/aset vector/character-animation.jpg';
-import dogVector from '../../public/aset vector/agung-illustrator-portfolio-01-web-legacy.jpg';
-import dog2Vector from '../../public/aset vector/agung-illustrator-portfolio-02-web-legacy.jpg';
-import catRockVector from '../../public/aset vector/agung-illustrator-portfolio-06-web-legacy.jpg';
-import catVector from '../../public/aset vector/agung-illustrator-portfolio-05-web-legacy.jpg';
+import characterVector from "../../public/aset vector/character-animation.jpg";
+import dogVector from "../../public/aset vector/agung-illustrator-portfolio-01-web-legacy.jpg";
+import dog2Vector from "../../public/aset vector/agung-illustrator-portfolio-02-web-legacy.jpg";
+import catRockVector from "../../public/aset vector/agung-illustrator-portfolio-06-web-legacy.jpg";
+import catVector from "../../public/aset vector/agung-illustrator-portfolio-05-web-legacy.jpg";
 
 // main component ----------------------------------------------------
 
@@ -31,19 +31,44 @@ const Vector = () => {
         </div>
         <div className="grid grid-cols-4 grid-flow-row gap-1 py-5 border-b border-gray-600 tabletMinWidth:py-10">
           <div className="flex-1 col-span-4 lap laptopMinWidth:hidden">
-            <Image src={characterVector} alt="characterVector" />
+            <Image
+              src={characterVector}
+              alt="characterVector"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              placeholder="blur"
+            />
           </div>
           <div className="flex-1 col-span-2 laptopMinWidth:col-span-1">
-            <Image src={dogVector} alt="dogVector" />
+            <Image
+              src={dogVector}
+              alt="dogVector"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              placeholder="blur"
+            />
           </div>
           <div className="flex-1 col-span-2 laptopMinWidth:col-span-1">
-            <Image src={catVector} alt="dog2Vector" />
+            <Image
+              src={catVector}
+              alt="dog2Vector"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              placeholder="blur"
+            />
           </div>
           <div className="flex-1 col-span-2 laptopMinWidth:col-span-1">
-            <Image src={catRockVector} alt="catRockVector" />
+            <Image
+              src={catRockVector}
+              alt="catRockVector"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              placeholder="blur"
+            />
           </div>
           <div className=" flex-1 col-span-2 laptopMinWidth:col-span-1">
-            <Image src={dog2Vector} alt="catVector" />
+            <Image
+              src={dog2Vector}
+              alt="catVector"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              placeholder="blur"
+            />
           </div>
         </div>
       </div>

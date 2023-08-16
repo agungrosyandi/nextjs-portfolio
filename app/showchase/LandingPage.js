@@ -1,12 +1,12 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 // image import ----------------------------------------------------
 
-import mockup1 from '../../public/uxdesign assets/TL-ResponsiveMockup-legacy-2.jpg';
-import mockup3 from '../../public/uxdesign assets/desktop cover narasihistorian mock up.jpg';
-import mockup4 from '../../public/uxdesign assets/tab mobile cover narasihistorian mock up.jpg';
+import mockup1 from "../../public/uxdesign assets/TL-ResponsiveMockup-legacy-2.jpg";
+import mockup3 from "../../public/uxdesign assets/desktop cover narasihistorian mock up.jpg";
+import mockup4 from "../../public/uxdesign assets/tab mobile cover narasihistorian mock up.jpg";
 
 // main component ----------------------------------------------------
 
@@ -33,13 +33,28 @@ const Landingpage = () => {
         </div>
         <div className="grid grid-cols-2 grid-flow-row gap-1 py-5 border-b border-gray-600 tabletMinWidth:py-10">
           <div className="flex-1 col-span-2 laptopMinWidth:hidden">
-            <Image src={mockup1} alt="mockup1" />
+            <Image
+              src={mockup1}
+              alt="mockup1"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              placeholder="blur"
+            />
           </div>
           <div className="flex-1 col-span-2 tabletMinWidth:col-span-1 laptopMinWidth:col-span-1">
-            <Image src={mockup3} alt="mockup3" />
+            <Image
+              src={mockup3}
+              alt="mockup3"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              placeholder="blur"
+            />
           </div>
           <div className="flex-1 col-span-2 tabletMinWidth:col-span-1 laptopMinWidth:col-span-1">
-            <Image src={mockup4} alt="mockup4" />
+            <Image
+              src={mockup4}
+              alt="mockup4"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              placeholder="blur"
+            />
           </div>
         </div>
         <div className="relative flex-1">
@@ -55,7 +70,7 @@ const Landingpage = () => {
             graduate in international relations degree and have passion about
             history, especially on global context, He trying to share his
             passion about history with interactive aproach and visual pleasing
-            with high quallity video content and web through article. <br />{' '}
+            with high quallity video content and web through article. <br />{" "}
             <br />
             <Link href="https://narasihistorian.netlify.app/" target="_blank">
               <span className="font-bold border-b border-gray-600 ">
