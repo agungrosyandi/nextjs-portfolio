@@ -3,11 +3,11 @@
 import React from 'react';
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-// import { gsap, Power3 } from "gsap";
 
 // icons import ----------------------------------------------------
 
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { IoBookSharp, IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5';
 
 // font import ----------------------------------------------------
 
@@ -31,32 +31,16 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`${montserrat.className} fixed w-screen z-10 p-5 laptopMinWidth:px-10`}
+        className={`${montserrat.className} fixed w-screen z-10 p-5 laptopMinWidth:px-10 desktopMinWidth:px-28`}
       >
         <div className="bg-stone-100 w-full shadow-xl flex items-center justify-between py-2 px-5 rounded-[20px]">
-          <h1 className="text-base laptopMinWidth:text-lg">
-            <Link href="/">My Biography</Link>
+          <h1 className="text-base uppercase laptopMinWidth:text-lg">
+            <Link href="/">Agung</Link>
           </h1>
-          <ul className="items-center text-lg hidden tabletMinWidth:flex tabletMinWidth:py-2">
-            <li className="pr-5">
-              <Link
-                href="https://online.fliphtml5.com/znosl/xddq/"
-                target="_blank"
-              >
-                Resume
-              </Link>
-            </li>
-            <li className="">
-              <Link href="/showchase">Showchase</Link>
-            </li>
-          </ul>
 
           {/* burger menu ------------------------------------------------- */}
 
-          <div
-            onClick={handleNav}
-            className="z-10  block tabletMinWidth:hidden"
-          >
+          <div onClick={handleNav} className="z-10">
             {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
           </div>
 
@@ -69,17 +53,42 @@ const Navbar = () => {
           >
             <h1 className="text-logoNavbar p-5">AGUNG</h1>
 
-            <ul className="text-lg p-4 uppercase">
+            <ul className="text-lg p-4 tabletMinWidth:text-xl">
               <li className="p-5 border-b border-gray-600">
-                <Link
-                  href="https://online.fliphtml5.com/znosl/xddq/"
-                  target="_blank"
-                >
-                  Resume
-                </Link>
+                <div className="flex">
+                  <IoBookSharp size={30} />
+                  <Link
+                    className="pl-5"
+                    href="https://online.fliphtml5.com/znosl/xddq/"
+                    target="_blank"
+                  >
+                    Resume
+                  </Link>
+                </div>
               </li>
               <li className="p-5 border-b border-gray-600">
-                <Link href="/showchase">Showchase</Link>
+                <div className="flex">
+                  <IoLogoLinkedin size={30} />
+                  <Link
+                    className="pl-5"
+                    href="https://www.linkedin.com/in/agung-rosyandi-3215841a2/"
+                    target="_blank"
+                  >
+                    Linkedin
+                  </Link>
+                </div>
+              </li>
+              <li className="p-5 border-b border-gray-600">
+                <div className="flex">
+                  <IoLogoGithub size={30} />
+                  <Link
+                    className="pl-5"
+                    href="https://github.com/agungrosyandi"
+                    target="_blank"
+                  >
+                    Github
+                  </Link>
+                </div>
               </li>
             </ul>
           </div>

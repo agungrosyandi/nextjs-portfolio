@@ -5,50 +5,32 @@
 /* default settings */
 
 @font-face {
-  font-family: "NelaSlabLight";
-  src: url("../font/NelaSlab\ Light.ttf") format("truetype");
+  font-family: 'DrukBoldTrial';
+  src: url('../font/Druk-Bold-Trial.otf') format('opentype');
 }
 
 @font-face {
-  font-family: "DrukWideMedium";
-  src: url("../font/DrukTextWide-Medium-Trial.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "DrukWideBold";
-  src: url("../font/DrukTextWide-Bold-Trial.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "MonaSansUltraLightWide";
-  src: url("../font/Mona-Sans.woff2") format("woff2 supports variations"),
-    url("../font/Mona-Sans.woff2") format("woff2-variations");
+  font-family: 'MonaSansLight';
+  src: url('../font/Mona-Sans.woff2') format('woff2 supports variations'),
+    url('../font/Mona-Sans.woff2') format('woff2-variations');
   font-weight: 200;
-  font-stretch: 125%;
+  font-stretch: 100%;
 }
 
 @font-face {
-  font-family: "MonaSansUltraLightNarrow";
-  src: url("../font/Mona-Sans.woff2") format("woff2 supports variations"),
-    url("../font/Mona-Sans.woff2") format("woff2-variations");
+  font-family: 'MonaSansLightNarrow';
+  src: url('../font/Mona-Sans.woff2') format('woff2 supports variations'),
+    url('../font/Mona-Sans.woff2') format('woff2-variations');
   font-weight: 200;
   font-stretch: 75%;
 }
 
 @font-face {
-  font-family: "MonaSansUltraLight";
-  src: url("../font/Mona-Sans.woff2") format("woff2 supports variations"),
-    url("../font/Mona-Sans.woff2") format("woff2-variations");
-  font-weight: 200;
-  font-stretch: 100%;
-}
-
-@font-face {
-  font-family: "MonaSansLight";
-  src: url("../font/Mona-Sans.woff2") format("woff2 supports variations"),
-    url("../font/Mona-Sans.woff2") format("woff2-variations");
-  font-weight: 300;
-  font-stretch: 100%;
+  font-family: 'MonaSansBold';
+  src: url('../font/Mona-Sans.woff2') format('woff2 supports variations'),
+    url('../font/Mona-Sans.woff2') format('woff2-variations');
+  font-weight: 500;
+  font-stretch: 125%;
 }
 
 :root {
