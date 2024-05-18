@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import VectorSections from './Vector';
-import Navbar from '../components/Navbar';
+import VectorSections from "./Vector";
+import Navbar from "../components/Navbar";
 
 // main component --------------------------------------------------
 
 export default function Showchase() {
   return (
-    <main className="bg-gray-100">
+    <main className="bg-stone-800">
       <Navbar />
       <VectorSections />
     </main>

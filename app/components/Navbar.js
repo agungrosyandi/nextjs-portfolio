@@ -1,22 +1,22 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { useState, useRef, useEffect } from 'react';
-import Link from 'next/link';
+import React from "react";
+import { useState, useRef, useEffect } from "react";
+import Link from "next/link";
 
 // icons import ----------------------------------------------------
 
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import { IoBookSharp, IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5';
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { IoBookSharp, IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
 
 // font import ----------------------------------------------------
 
-import { Montserrat } from 'next/font/google';
+import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
-  style: ['normal'],
-  subsets: ['latin'],
-  weight: ['400'],
+  style: ["normal"],
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 // main component --------------------------------------------------
@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`${montserrat.className} fixed w-screen z-10 p-5 laptopMinWidth:px-10 desktopMinWidth:px-28`}
+        className={`${montserrat.className} fixed w-screen z-10 p-5 laptopMinWidth:px-5 fullHdMinWidth:px-32`}
       >
         <div className="bg-stone-100 w-full shadow-xl flex items-center justify-between py-2 px-5 rounded-[20px]">
           <h1 className="text-base uppercase laptopMinWidth:text-lg">
@@ -47,8 +47,8 @@ const Navbar = () => {
           <div
             className={
               !nav
-                ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-gray-100 ease-in-out duration-500 z-20'
-                : 'fixed left-[-100%]'
+                ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-gray-100 ease-in-out duration-500 z-20"
+                : "fixed left-[-100%]"
             }
           >
             <h1 className="text-logoNavbar p-5">AGUNG</h1>
@@ -59,7 +59,7 @@ const Navbar = () => {
                   <IoBookSharp size={30} />
                   <Link
                     className="pl-5"
-                    href="https://online.fliphtml5.com/znosl/xddq/"
+                    href="https://drive.google.com/uc?export=download&id=1WxdDJZkxp1xxealLDvVM6VeASpha6C-x"
                     target="_blank"
                   >
                     Resume
@@ -95,8 +95,8 @@ const Navbar = () => {
           <div
             className={
               !nav
-                ? 'fixed left-0 top-0 w-screen h-screen backdrop-blur-sm bg-white/30 ease-in-out duration-500 '
-                : 'fixed'
+                ? "fixed left-0 top-0 w-screen h-screen backdrop-blur-sm bg-white/30 ease-in-out duration-500 "
+                : "fixed"
             }
           ></div>
         </div>
