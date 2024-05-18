@@ -14,13 +14,13 @@ const poppinsFontRegular400 = Poppins({
 
 const Skills2Sections = () => {
   return (
-    <div className="flex flex-col justify-center py-10">
-      <div className="flex-1 relative pb-10 desktopMinWidth:hidden fullHdMinWidth:block fullHdMinWidth:pb-10">
+    <div className="flex flex-col justify-center py-10 desktopMinWidth:items-center desktopMinWidth:text-center">
+      <div className="flex-1 relative pb-10 fullHdMinWidth:pb-10">
         <WebDevelopmentVideo />
       </div>
       <div className="flex-1">
         <h1
-          className={`font-DrukBoldTrial text-6xl uppercase tabletMinWidth:text-8xl laptopMinWidth:text-7xl desktopMinWidth:text-4xl fullHdMinWidth:text-6xl`}
+          className={`font-DrukBoldTrial text-6xl uppercase tabletMinWidth:text-8xl laptopMinWidth:text-7xl desktopMinWidth:text-4xl fullHdMinWidth:text-5xl`}
         >
           Web Development
         </h1>
@@ -28,7 +28,7 @@ const Skills2Sections = () => {
           Tools: HTML, CSS, Javascript
         </p>
         <p
-          className={`${poppinsFontRegular400.className} pb-5 pr-3 text-xs tabletMinWidth:text-base laptopMinWidth:pb-10`}
+          className={`${poppinsFontRegular400.className} pb-5 pr-3 text-xs tabletMinWidth:text-base laptopMinWidth:pb-10 desktopMinWidth:hidden`}
         >
           In the era Digitalization 4.0, graphic and video content stil not
           enough to make your content special and unique, so build your content

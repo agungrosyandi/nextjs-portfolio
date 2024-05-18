@@ -9,7 +9,7 @@ const VideoHomeBackground = () => {
         className="relative w-full h-full rounded-[20px] shadow-xl object-cover left-0 right-0 top-0 bottom-0 z-[2] "
         width={1000}
         height={1000}
-        src={require("../../../public/video/7.mp4")}
+        src={require("../../../public/video/8.mp4")}
         autoPlay
         loop
         muted

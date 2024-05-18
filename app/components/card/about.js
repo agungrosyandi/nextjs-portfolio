@@ -15,7 +15,7 @@ const AboutSections = () => {
     <div className="flex flex-col justify-center desktopMinWidth:items-center desktopMinWidth:text-center">
       <div className="">
         <h1
-          className={`font-DrukBoldTrial text-6xl uppercase pb-5 tabletMinWidth:text-8xl laptopMinWidth:px-0 desktopMinWidth:text-6xl fullHdMinWidth:text-8xl fullHdMinWidth:pb-10`}
+          className={`font-DrukBoldTrial text-6xl uppercase pb-5 tabletMinWidth:text-8xl laptopMinWidth:px-0 desktopMinWidth:text-5xl fullHdMinWidth:text-8xl`}
         >
           About me
         </h1>
