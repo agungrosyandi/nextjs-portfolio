@@ -1,4 +1,5 @@
 import React from "react";
+import { poppinsFontRegular400 } from "../lib/font";
 
 import {
   VideoCamping1,
@@ -10,30 +11,20 @@ import {
   VideoDeepsea,
 } from "./VideoAssets";
 
-// font import ----------------------------------------------------
-
-import { Poppins } from "@next/font/google";
-
-const poppinsFontRegular400 = Poppins({
-  style: ["normal"],
-  subsets: ["latin"],
-  weight: ["400"],
-});
-
 // main component ----------------------------------------------------
 
 const Vector = () => {
   return (
-    <section id="vector">
-      <div className="relative text-stone-100 flex flex-col flex-1 justify-center items-center w-full px-10 pt-20 pb-5 tabletMinWidth:px-10 tabletMinWidth:pt-32 tabletMinWidth:pb-10 fullHdMinWidth:px-32">
-        <div className="relative flex-1">
+    <section id="relative flex flex-col justify-center items-center">
+      <div className=" text-[#31363F] w-full px-5 py-10 tabletMinWidth:px-10 desktopMinWidth:px-20 fullHdMinWidth:px-32">
+        <div className="flex-1">
           <h1
-            className={`font-DrukBoldTrial text-6xl pt-4 tabletMinWidth:text-7xl fullHdMinWidth:text-8xl`}
+            className={`font-DrukBoldTrial uppercase text-3xl pt-4 tabletMinWidth:text-5xl laptopMinWidth:text-6xl`}
           >
             Graphic & Motion Design
           </h1>
           <p
-            className={`${poppinsFontRegular400.className} text-xs pt-5 pb-5 border-b border-gray-600 tabletMinWidth:text-base fullHdMinWidth:text-xl`}
+            className={`${poppinsFontRegular400.className} text-xs pt-5 tabletMinWidth:text-sm fullHdMinWidth:text-xl`}
           >
             Using Adobe Illustrator as an primary tools, basically illustrator
             is tools for the create 2D assets. So with Illustrator, i can create

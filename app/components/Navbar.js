@@ -3,21 +3,12 @@
 import React from "react";
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import { montserrat } from "../lib/font";
 
 // icons import ----------------------------------------------------
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { IoBookSharp, IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
-
-// font import ----------------------------------------------------
-
-import { Montserrat } from "next/font/google";
-
-const montserrat = Montserrat({
-  style: ["normal"],
-  subsets: ["latin"],
-  weight: ["400"],
-});
 
 // main component --------------------------------------------------
 
@@ -31,9 +22,9 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`${montserrat.className} fixed w-screen z-10 p-5 laptopMinWidth:px-5 fullHdMinWidth:px-32`}
+        className={`${montserrat.className} relative w-screen z-10 px-5 pt-5 laptopMinWidth:px-5 desktopMinWidth:px-14 fullHdMinWidth:px-32`}
       >
-        <div className="bg-stone-100 w-full shadow-xl flex items-center justify-between py-2 px-5 rounded-[20px]">
+        <div className="bg-stone-100 w-full shadow-xl flex items-center justify-between py-2 px-5">
           <h1 className="text-base uppercase laptopMinWidth:text-lg">
             <Link href="/">Agung</Link>
           </h1>

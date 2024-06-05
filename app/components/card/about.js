@@ -1,26 +1,17 @@
 import React from "react";
-
-// font google import ----------------------------------------------------
-
-import { Poppins } from "@next/font/google";
-
-const poppinsFontRegular400 = Poppins({
-  style: ["normal"],
-  subsets: ["latin"],
-  weight: ["400"],
-});
+import { poppinsFontRegular400 } from "@/app/lib/font";
 
 const AboutSections = () => {
   return (
-    <div className="flex flex-col justify-center desktopMinWidth:items-center desktopMinWidth:text-center">
+    <div className="flex flex-col justify-center desktopMinWidth:items-center">
       <div className="">
         <h1
-          className={`font-DrukBoldTrial text-6xl uppercase pb-5 tabletMinWidth:text-8xl laptopMinWidth:px-0 desktopMinWidth:text-5xl fullHdMinWidth:text-8xl`}
+          className={`font-DrukBoldTrial text-5xl uppercase pb-5 laptopMinWidth:px-0 laptopMinWidth:text-6xl fullHdMinWidth:text-7xl`}
         >
           About me
         </h1>
         <p
-          className={`${poppinsFontRegular400.className} font-MonaSansUltraLight pr-3 text-xs tabletMinWidth:text-base`}
+          className={`${poppinsFontRegular400.className} font-MonaSansUltraLight pr-3 text-xs laptopMinWidth:text-sm desktopMinWidth:border-b-4 border-stone-300 desktopMinWidth:pb-10 fullHdMinWidth:text-xl`}
         >
           Graphic and Web design based on Bandung West Java Indonesia. Currently
           im proficient with productivity soft-skills. such a Adobe Creative

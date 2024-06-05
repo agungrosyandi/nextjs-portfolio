@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar";
 
 export default function Showchase() {
   return (
-    <main className="bg-stone-800">
+    <main className="bg-stone-100">
       <Navbar />
       <VectorSections />
     </main>

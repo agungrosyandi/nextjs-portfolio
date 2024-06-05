@@ -6,10 +6,10 @@ const VideoHomeBackground = () => {
   return (
     <>
       <video
-        className="relative w-full h-full rounded-[20px] shadow-xl object-cover left-0 right-0 top-0 bottom-0 z-[2] "
+        className="relative w-full h-full object-cover left-0 right-0 top-0 bottom-0 z-[2]"
         width={1000}
         height={1000}
-        src={require("../../../public/video/8.mp4")}
+        src={require("../../../public/video/1.mp4")}
         autoPlay
         loop
         muted
@@ -24,10 +24,10 @@ const GraphicDesignVideo = () => {
   return (
     <>
       <video
-        className="relative w-full h-full rounded-[20px] shadow-xl object-cover left-0 right-0 top-0 bottom-0 z-[2] "
+        className="relative w-full h-full object-cover left-0 right-0 top-0 bottom-0 z-[2]"
         width={1000}
         height={1000}
-        src={require("../../../public/video/5.mp4")}
+        src={require("../../../public/video/2.mp4")}
         autoPlay
         loop
         muted
@@ -42,10 +42,10 @@ const WebDevelopmentVideo = () => {
   return (
     <>
       <video
-        className="relative w-full h-full rounded-[20px] shadow-xl object-cover left-0 right-0 top-0 bottom-0 z-[2] "
+        className="relative w-full h-full object-cover left-0 right-0 top-0 bottom-0 z-[2]"
         width={1000}
         height={1000}
-        src={require("../../../public/video/6.mp4")}
+        src={require("../../../public/video/3.mp4")}
         autoPlay
         loop
         muted

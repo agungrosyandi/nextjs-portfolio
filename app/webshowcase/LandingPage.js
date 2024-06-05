@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { poppinsFontRegular400 } from "../lib/font";
 
 // image import ----------------------------------------------------
 
@@ -11,30 +12,20 @@ import mockup5 from "../../public/uxdesign assets/TL-ResponsiveMockup.jpg";
 import mockup6 from "../../public/uxdesign assets/template-mockup-mobile-web.jpg";
 import mockup7 from "../../public/uxdesign assets/first-portpolio-agung.jpg";
 
-// font import ----------------------------------------------------
-
-import { Poppins } from "@next/font/google";
-
-const poppinsFontRegular400 = Poppins({
-  style: ["normal"],
-  subsets: ["latin"],
-  weight: ["400"],
-});
-
 // main component ----------------------------------------------------
 
 const Landingpage = () => {
   return (
-    <section id="landingpage">
-      <div className="relative text-stone-100 flex flex-1 flex-col justify-center items-center w-full px-10 pt-20 pb-5 tabletMinWidth:px-10 tabletMinWidth:pt-32 tabletMinWidth:pb-10 fullHdMinWidth:px-32">
+    <section id="relative flex flex-1 flex-col justify-center items-center">
+      <div className="text-[#31363F] w-full px-5 py-10 desktopMinWidth:px-14 fullHdMinWidth:px-32">
         <div className="relative flex-1">
           <h1
-            className={`font-DrukBoldTrial text-5xl pt-4 tabletMinWidth:text-7xl fullHdMinWidth:text-8xl`}
+            className={`font-DrukBoldTrial uppercase text-4xl pt-4 tabletMinWidth:text-5xl fullHdMinWidth:text-6xl`}
           >
             UI/UX Web Design
           </h1>
           <p
-            className={`${poppinsFontRegular400.className} text-xs pt-5 pb-5 border-b border-gray-600 tabletMinWidth:text-base fullHdMinWidth:text-xl`}
+            className={`${poppinsFontRegular400.className} text-xs pt-5 tabletMinWidth:text-sm fullHdMinWidth:text-xl`}
           >
             To create interactive website, regardless web app or just landing
             page, you need a specifics tools. In my case, i’m using figma for
@@ -47,7 +38,7 @@ const Landingpage = () => {
         {/* narasihistorian ------------------------------------------------ */}
 
         <div className="grid grid-cols-2 grid-flow-row gap-1 py-5 border-b border-gray-600 tabletMinWidth:py-10">
-          <div className="flex-1 col-span-2">
+          <div className="flex-1 col-span-2 laptopMinWidth:hidden">
             <Image
               src={mockup1}
               alt="mockup1"
@@ -55,7 +46,7 @@ const Landingpage = () => {
               placeholder="blur"
             />
           </div>
-          <div className="flex-1 col-span-2 tabletMinWidth:col-span-1 laptopMinWidth:col-span-1">
+          <div className="flex-1 col-span-2 tabletMinWidth:col-span-2 laptopMinWidth:col-span-1">
             <Image
               src={mockup3}
               alt="mockup3"
@@ -63,7 +54,7 @@ const Landingpage = () => {
               placeholder="blur"
             />
           </div>
-          <div className="flex-1 col-span-2 tabletMinWidth:col-span-1 laptopMinWidth:col-span-1">
+          <div className="flex-1 col-span-2 tabletMinWidth:col-span-2 laptopMinWidth:col-span-1">
             <Image
               src={mockup4}
               alt="mockup4"
@@ -74,7 +65,7 @@ const Landingpage = () => {
         </div>
         <div className="relative flex-1">
           <h1
-            className={`font-DrukBoldTrial text-5xl pt-4 tabletMinWidth:text-7xl fullHdMinWidth:text-8xl`}
+            className={`font-DrukBoldTrial uppercase text-4xl pt-4 tabletMinWidth:text-5xl fullHdMinWidth:text-6xl`}
           >
             Narasihistorian
           </h1>
@@ -84,7 +75,7 @@ const Landingpage = () => {
             Create by Next.js & TailwindCSS
           </h6>
           <p
-            className={`${poppinsFontRegular400.className} text-xs pt-5 pb-5 border-b border-gray-600 tabletMinWidth:text-base fullHdMinWidth:text-xl`}
+            className={`${poppinsFontRegular400.className} text-xs pt-5 pb-5 border-b border-gray-600 tabletMinWidth:text-sm fullHdMinWidth:text-xl`}
           >
             Narasihistorian is history content blog, create by owner who
             graduate in international relations degree and have passion about
@@ -92,7 +83,7 @@ const Landingpage = () => {
             interactive aproach and visual pleasing with high quallity video
             content and web through article. <br /> <br />
             <Link href="https://narasihistorian.netlify.app/" target="_blank">
-              <span className="font-bold border-b text-yellow-300 border-gray-600 ">
+              <span className="font-bold border-b text-zinc-700 border-gray-600 ">
                 Visit source
               </span>
             </Link>
@@ -101,7 +92,7 @@ const Landingpage = () => {
               href="https://agungrosyandi.github.io/mystory/html/uxdesign.html"
               target="_blank"
             >
-              <span className="font-bold border-b text-yellow-300 border-gray-600">
+              <span className="font-bold border-b text-zinc-700 border-gray-600">
                 Take a look at the design process
               </span>
             </Link>
@@ -130,7 +121,7 @@ const Landingpage = () => {
         </div>
         <div className="relative flex-1">
           <h1
-            className={`font-DrukBoldTrial text-5xl pt-4 tabletMinWidth:text-7xl fullHdMinWidth:text-8xl`}
+            className={`font-DrukBoldTrial uppercase text-4xl pt-4 tabletMinWidth:text-5xl fullHdMinWidth:text-6xl`}
           >
             AntaValley
           </h1>
@@ -140,7 +131,7 @@ const Landingpage = () => {
             Create by HTML, CSS, javascript, and GSAP Scrolltriger
           </h6>
           <p
-            className={`${poppinsFontRegular400.className} text-xs pt-5 pb-5 border-b border-gray-600 tabletMinWidth:text-base fullHdMinWidth:text-xl`}
+            className={`${poppinsFontRegular400.className} text-xs pt-5 pb-5 border-b border-gray-600 tabletMinWidth:text-sm fullHdMinWidth:text-xl`}
           >
             AntaValley is Resort Holding Landing Page, create by motion loop
             style based on 2D Assets. Its combine unique, interactive with
@@ -151,7 +142,7 @@ const Landingpage = () => {
               href="https://narasihistorian.github.io/prototype-landingpage//"
               target="_blank"
             >
-              <span className="font-bold border-b text-yellow-300 border-gray-600 ">
+              <span className="font-bold border-b text-zinc-700 border-gray-600 ">
                 Visit source
               </span>
             </Link>
@@ -172,7 +163,7 @@ const Landingpage = () => {
         </div>
         <div className="relative flex-1">
           <h1
-            className={`font-DrukBoldTrial text-5xl pt-4 tabletMinWidth:text-7xl fullHdMinWidth:text-8xl`}
+            className={`font-DrukBoldTrial uppercase text-4xl pt-4 tabletMinWidth:text-5xl fullHdMinWidth:text-6xl`}
           >
             Agung V1
           </h1>
@@ -182,7 +173,7 @@ const Landingpage = () => {
             Create by HTML, CSS, javascript, and GSAP ScrollSmoother
           </h6>
           <p
-            className={`${poppinsFontRegular400.className} text-xs pt-5 pb-5 border-b border-gray-600 tabletMinWidth:text-base fullHdMinWidth:text-xl`}
+            className={`${poppinsFontRegular400.className} text-xs pt-5 pb-5 border-b border-gray-600 tabletMinWidth:text-sm fullHdMinWidth:text-xl`}
           >
             This is my first website. As a graphic design, i want to expand and
             improve my soft-skills. Because my basics on the design software and
@@ -194,7 +185,7 @@ const Landingpage = () => {
               href="https://agungrosyandi.github.io/mystory/"
               target="_blank"
             >
-              <span className="font-bold border-b text-yellow-300 border-gray-600 ">
+              <span className="font-bold border-b text-zinc-700 border-gray-600 ">
                 Visit source
               </span>
             </Link>

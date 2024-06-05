@@ -1,32 +1,21 @@
 import React from "react";
 import Link from "next/link";
-
-// font google import ----------------------------------------------------
-
-import { Poppins } from "@next/font/google";
-
-const poppinsFontRegular400 = Poppins({
-  style: ["normal"],
-  subsets: ["latin"],
-  weight: ["400"],
-});
+import { poppinsFontRegular400 } from "@/app/lib/font";
 
 const ClosingSections = () => {
   return (
-    <div className="relative flex flex-col justify-center px-2 py-10 tabletMinWidth:px-5">
+    <div className="relative flex flex-col justify-center px-2 py-10 tabletMinWidth:px-5 desktopMinWidth:text-center">
       <div className="">
-        <p
-          className={`font-MonaSansLight text-lg tabletMinWidth:text-3xl laptopMinWidth:text-2xl`}
-        >
+        <p className={`font-MonaSansLight text-lg laptopMinWidth:text-xl`}>
           Interesting isn't ? :)
         </p>
         <div
-          className={`font-DrukBoldTrial text-6xl py-5 uppercase tabletMinWidth:text-8xl tabletMinWidth:py-7 desktopMinWidth:text-7xl fullHdMinWidth:text-8xl`}
+          className={`font-DrukBoldTrial text-5xl py-5 uppercase tabletMinWidth:text-6xl laptopMinWidth:text-7xl tabletMinWidth:py-7 fullHdMinWidth:text-8xl`}
         >
           <h1>Lets Working Together</h1>
         </div>
         <p
-          className={`${poppinsFontRegular400.className} pb-5 text-xs tabletMinWidth:text-base tabletMinWidth:pb-7`}
+          className={`${poppinsFontRegular400.className} pb-5 text-xs tabletMinWidth:text-base tabletMinWidth:pb-7 desktopMinWidth:text-base`}
         >
           Dont hestitate to contact me if you need my service
         </p>

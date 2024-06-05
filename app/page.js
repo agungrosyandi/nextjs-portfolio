@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
-    <main className="bg-stone-800">
+    <main className="bg-stone-100">
       <Navbar />
       <AppSections />
     </main>

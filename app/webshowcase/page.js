@@ -7,7 +7,7 @@ import WebDevelopmentSections from "./LandingPage";
 
 export default function Showchase() {
   return (
-    <main className="bg-stone-800">
+    <main className="bg-stone-100">
       <Navbar />
       <WebDevelopmentSections />
     </main>
