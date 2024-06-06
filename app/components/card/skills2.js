@@ -6,10 +6,10 @@ import { poppinsFontRegular400 } from "@/app/lib/font";
 const Skills2Sections = () => {
   return (
     <div className="flex flex-col justify-center tabletMinWidth:flex-row desktopMinWidth:flex-row-reverse">
-      <div className="flex-1 relative desktopMinWidth:border-r-4 desktopMinWidth:border-b-4 border-stone-300">
+      <div className="flex-1 relative">
         <WebDevelopmentVideo />
       </div>
-      <div className="flex-1 px-5 pb-10 tabletMinWidth:pb-5 tabletMinWidth:flex tabletMinWidth:flex-col tabletMinWidth:justify-center">
+      <div className="flex-1 px-5 pb-10 tabletMinWidth:py-5 tabletMinWidth:flex tabletMinWidth:flex-col tabletMinWidth:justify-center desktopMinWidth:pl-20">
         <h1
           className={`font-DrukBoldTrial text-4xl uppercase laptopMinWidth:text-5xl fullHdMinWidth:text-7xl`}
         >
@@ -19,7 +19,7 @@ const Skills2Sections = () => {
           Tools: HTML, CSS, Javascript
         </p>
         <p
-          className={`${poppinsFontRegular400.className} pb-5 pr-3 text-xs laptopMinWidth:text-sm laptopMinWidth:pb-10 fullHdMinWidth:text-xl`}
+          className={`${poppinsFontRegular400.className} pb-5 pr-3 text-xs laptopMinWidth:text-sm laptopMinWidth:pb-10 fullHdMinWidth:text-lg`}
         >
           In the era Digitalization 4.0, graphic and video content stil not
           enough to make your content special and unique, so build your content

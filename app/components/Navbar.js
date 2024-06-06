@@ -3,7 +3,7 @@
 import React from "react";
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import { montserrat } from "../lib/font";
+import { poppinsFontRegular400 } from "../lib/font";
 
 // icons import ----------------------------------------------------
 
@@ -22,23 +22,68 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`${montserrat.className} relative w-screen z-10 px-5 pt-5 laptopMinWidth:px-5 desktopMinWidth:px-14 fullHdMinWidth:px-32`}
+        className={`${poppinsFontRegular400.className} relative w-screen z-10 pt-5 desktopMinWidth:px-8 fullHdMinWidth:px-28`}
       >
-        <div className="bg-stone-100 w-full shadow-xl flex items-center justify-between py-2 px-5">
-          <h1 className="text-base uppercase laptopMinWidth:text-lg">
+        <div className="w-full flex items-center justify-between py-2 px-5">
+          <h1 className="text-xs shadow-xl rounded-[50px] border border-stone-700 px-5 py-1 uppercase laptopMinWidth:text-sm desktopMinWidth:px-5 desktopMinWidth:py-2">
             <Link href="/">Agung</Link>
           </h1>
 
+          {/* desktop menu    */}
+
+          <div>
+            <ul className=" text-[#464646] items-center py-5 hidden desktopMinWidth:flex desktopMinWidth:text-xs">
+              <li className="pr-5 z-10">
+                <div className="flex items-center shadow-xl rounded-[50px] border border-stone-700 py-2 px-5">
+                  <IoBookSharp className="pr-2" size={30} />
+                  <Link
+                    rel="preload"
+                    href="https://drive.google.com/uc?export=download&id=1WxdDJZkxp1xxealLDvVM6VeASpha6C-x"
+                  >
+                    Resume
+                  </Link>
+                </div>
+              </li>
+              <li className="pr-5 z-10">
+                <div className="flex items-center shadow-xl rounded-[50px] border border-stone-700 py-2 px-5">
+                  <IoLogoLinkedin className="pr-2" size={30} />
+                  <Link
+                    rel="preload"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/agung-rosyandi-3215841a2/"
+                  >
+                    Linkedin
+                  </Link>
+                </div>
+              </li>
+              <li className="z-10">
+                <div className="flex items-center shadow-xl rounded-[50px] border border-stone-700 py-2 px-5">
+                  <IoLogoGithub className="pr-2" size={30} />
+                  <Link
+                    rel="preload"
+                    target="_blank"
+                    href="https://github.com/agungrosyandi"
+                  >
+                    Github
+                  </Link>
+                </div>
+              </li>
+            </ul>
+          </div>
+
           {/* burger menu ------------------------------------------------- */}
 
-          <div onClick={handleNav} className="z-10">
+          <div
+            onClick={handleNav}
+            className="z-10 block desktopMinWidth:hidden"
+          >
             {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
           </div>
 
           <div
             className={
               !nav
-                ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-gray-100 ease-in-out duration-500 z-20"
+                ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#FFFAE6] ease-in-out duration-500 z-20"
                 : "fixed left-[-100%]"
             }
           >

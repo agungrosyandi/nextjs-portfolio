@@ -1,15 +1,15 @@
 "use client";
 
 import Navbar from "../components/Navbar";
-import WebDevelopmentSections from "./LandingPage";
+import WebDevelopment from "./WebDevelopment";
 
 // main component --------------------------------------------------
 
 export default function Showchase() {
   return (
-    <main className="bg-stone-100">
+    <main className="bg-[#FFFAE6]">
       <Navbar />
-      <WebDevelopmentSections />
+      <WebDevelopment />
     </main>
   );
 }

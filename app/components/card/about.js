@@ -11,7 +11,7 @@ const AboutSections = () => {
           About me
         </h1>
         <p
-          className={`${poppinsFontRegular400.className} font-MonaSansUltraLight pr-3 text-xs laptopMinWidth:text-sm desktopMinWidth:border-b-4 border-stone-300 desktopMinWidth:pb-10 fullHdMinWidth:text-xl`}
+          className={`${poppinsFontRegular400.className} font-MonaSansUltraLight pr-3 text-xs laptopMinWidth:text-sm fullHdMinWidth:text-lg`}
         >
           Graphic and Web design based on Bandung West Java Indonesia. Currently
           im proficient with productivity soft-skills. such a Adobe Creative

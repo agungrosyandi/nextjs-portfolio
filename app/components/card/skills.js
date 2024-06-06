@@ -6,10 +6,10 @@ import { poppinsFontRegular400 } from "@/app/lib/font";
 const SkillsSections = () => {
   return (
     <div className="flex flex-col justify-center tabletMinWidth:flex-row desktopMinWidth:flex-row">
-      <div className="flex-1 relative desktopMinWidth:border-l-4 desktopMinWidth:border-b-4 border-stone-300">
+      <div className="flex-1 relative">
         <GraphicDesignVideo />
       </div>
-      <div className="flex-1 px-5 pb-10 tabletMinWidth:pb-5 tabletMinWidth:flex tabletMinWidth:flex-col tabletMinWidth:justify-center">
+      <div className="flex-1 px-5 pb-10 tabletMinWidth:py-5 tabletMinWidth:flex tabletMinWidth:flex-col tabletMinWidth:justify-center desktopMinWidth:pl-20">
         <h1
           className={`font-DrukBoldTrial text-4xl uppercase laptopMinWidth:text-5xl fullHdMinWidth:text-7xl`}
         >
@@ -19,7 +19,7 @@ const SkillsSections = () => {
           Tools: Illustrator, Photoshop
         </p>
         <p
-          className={`${poppinsFontRegular400.className} pb-5 pr-3 text-xs laptopMinWidth:text-sm laptopMinWidth:pb-10 fullHdMinWidth:text-xl`}
+          className={`${poppinsFontRegular400.className} pb-5 pr-3 text-xs laptopMinWidth:text-sm laptopMinWidth:pb-10 fullHdMinWidth:text-lg`}
         >
           Make design with positive and negative space perspective, and mixed
           with gradient color, image costum font and so on. The output will

@@ -10,7 +10,7 @@ const ClosingSections = () => {
           Interesting isn't ? :)
         </p>
         <div
-          className={`font-DrukBoldTrial text-5xl py-5 uppercase tabletMinWidth:text-6xl laptopMinWidth:text-7xl tabletMinWidth:py-7 fullHdMinWidth:text-8xl`}
+          className={`font-DrukBoldTrial text-5xl py-5 uppercase laptopMinWidth:text-7xl tabletMinWidth:py-7`}
         >
           <h1>Lets Working Together</h1>
         </div>

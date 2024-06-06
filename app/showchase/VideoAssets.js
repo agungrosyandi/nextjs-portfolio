@@ -6,7 +6,7 @@ const VideoCamping1 = () => {
   return (
     <>
       <video
-        className="relative w-full h-full rounded-[20px] shadow-xl object-cover left-0 right-0 top-0 bottom-0 z-[2] "
+        className="relative w-full h-full shadow-xl object-cover left-0 right-0 top-0 bottom-0 z-[2] "
         width={1000}
         height={1000}
         src={require("../../public/video/camping web legacy.mp4")}
@@ -24,7 +24,7 @@ const VideoCamping2 = () => {
   return (
     <>
       <video
-        className="relative w-full h-full rounded-[20px] shadow-xl object-cover left-0 right-0 top-0 bottom-0 z-[2] "
+        className="relative w-full h-full shadow-xl object-cover left-0 right-0 top-0 bottom-0 z-[2] "
         width={1000}
         height={1000}
         src={require("../../public/video/camping 2 web legacy.mp4")}
@@ -42,7 +42,7 @@ const VideoMusicanTrumpet = () => {
   return (
     <>
       <video
-        className="relative w-full h-full rounded-[20px] shadow-xl object-cover left-0 right-0 top-0 bottom-0 z-[2] "
+        className="relative w-full h-full shadow-xl object-cover left-0 right-0 top-0 bottom-0 z-[2] "
         width={1000}
         height={1000}
         src={require("../../public/video/musician trumpet_1.mp4")}
@@ -60,7 +60,7 @@ const VideoAquarium1 = () => {
   return (
     <>
       <video
-        className="relative w-full h-full rounded-[20px] shadow-xl object-cover left-0 right-0 top-0 bottom-0 z-[2] "
+        className="relative w-full h-full shadow-xl object-cover left-0 right-0 top-0 bottom-0 z-[2] "
         width={1000}
         height={1000}
         src={require("../../public/video/aquarium 2.mp4")}
@@ -78,7 +78,7 @@ const VideoAquarium2 = () => {
   return (
     <>
       <video
-        className="relative w-full h-full rounded-[20px] shadow-xl object-cover left-0 right-0 top-0 bottom-0 z-[2] "
+        className="relative w-full h-full shadow-xl object-cover left-0 right-0 top-0 bottom-0 z-[2] "
         width={1000}
         height={1000}
         src={require("../../public/video/aquarium-.mp4")}
@@ -96,7 +96,7 @@ const VideoScooter1 = () => {
   return (
     <>
       <video
-        className="relative w-full h-full rounded-[20px] shadow-xl object-cover left-0 right-0 top-0 bottom-0 z-[2] "
+        className="relative w-full h-full shadow-xl object-cover left-0 right-0 top-0 bottom-0 z-[2] "
         width={1000}
         height={1000}
         src={require("../../public/video/scooter delivery-_1.mp4")}
@@ -114,7 +114,7 @@ const VideoDeepsea = () => {
   return (
     <>
       <video
-        className="relative w-full h-full rounded-[20px] shadow-xl  object-cover left-0 right-0 top-0 bottom-0 z-[2] "
+        className="relative w-full h-full shadow-xl  object-cover left-0 right-0 top-0 bottom-0 z-[2] "
         width={1000}
         height={1000}
         src={require("../../public/video/deepsea paralalex loop.mp4")}

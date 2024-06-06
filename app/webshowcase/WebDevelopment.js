@@ -17,7 +17,7 @@ import mockup7 from "../../public/uxdesign assets/first-portpolio-agung.jpg";
 const Landingpage = () => {
   return (
     <section id="relative flex flex-1 flex-col justify-center items-center">
-      <div className="text-[#31363F] w-full px-5 py-10 desktopMinWidth:px-14 fullHdMinWidth:px-32">
+      <div className="text-[#464646] w-full px-5 py-10 desktopMinWidth:px-14 fullHdMinWidth:px-32">
         <div className="relative flex-1">
           <h1
             className={`font-DrukBoldTrial uppercase text-4xl pt-4 tabletMinWidth:text-5xl fullHdMinWidth:text-6xl`}
@@ -37,8 +37,8 @@ const Landingpage = () => {
 
         {/* narasihistorian ------------------------------------------------ */}
 
-        <div className="grid grid-cols-2 grid-flow-row gap-1 py-5 border-b border-gray-600 tabletMinWidth:py-10">
-          <div className="flex-1 col-span-2 laptopMinWidth:hidden">
+        <div className="grid grid-cols-2 grid-flow-row gap-1 py-5 tabletMinWidth:py-10">
+          <div className="flex-1 border border-stone-700 p-3 col-span-2 laptopMinWidth:hidden">
             <Image
               src={mockup1}
               alt="mockup1"
@@ -46,7 +46,7 @@ const Landingpage = () => {
               placeholder="blur"
             />
           </div>
-          <div className="flex-1 col-span-2 tabletMinWidth:col-span-2 laptopMinWidth:col-span-1">
+          <div className="flex-1 border border-stone-700 p-3 col-span-2 tabletMinWidth:col-span-2 laptopMinWidth:col-span-1">
             <Image
               src={mockup3}
               alt="mockup3"
@@ -54,7 +54,7 @@ const Landingpage = () => {
               placeholder="blur"
             />
           </div>
-          <div className="flex-1 col-span-2 tabletMinWidth:col-span-2 laptopMinWidth:col-span-1">
+          <div className="flex-1 border border-stone-700 p-3 col-span-2 tabletMinWidth:col-span-2 laptopMinWidth:col-span-1">
             <Image
               src={mockup4}
               alt="mockup4"
@@ -75,7 +75,7 @@ const Landingpage = () => {
             Create by Next.js & TailwindCSS
           </h6>
           <p
-            className={`${poppinsFontRegular400.className} text-xs pt-5 pb-5 border-b border-gray-600 tabletMinWidth:text-sm fullHdMinWidth:text-xl`}
+            className={`${poppinsFontRegular400.className} text-xs pt-5 pb-5 tabletMinWidth:text-sm fullHdMinWidth:text-xl`}
           >
             Narasihistorian is history content blog, create by owner who
             graduate in international relations degree and have passion about
@@ -101,8 +101,8 @@ const Landingpage = () => {
 
         {/* antavalley ------------------------------------------------ */}
 
-        <div className="grid grid-cols-2 grid-flow-row gap-1 py-5 border-b border-gray-600 tabletMinWidth:py-10">
-          <div className="flex-1 col-span-2 laptopMinWidth:col-span-1">
+        <div className="grid grid-cols-2 grid-flow-row gap-1 py-5 tabletMinWidth:py-10">
+          <div className="flex-1 border border-stone-700 p-3 col-span-2 laptopMinWidth:col-span-1">
             <Image
               src={mockup5}
               alt="mockup1"
@@ -110,7 +110,7 @@ const Landingpage = () => {
               placeholder="blur"
             />
           </div>
-          <div className="flex-1 col-span-2 laptopMinWidth:col-span-1">
+          <div className="flex-1 border border-stone-700 p-3 col-span-2 laptopMinWidth:col-span-1">
             <Image
               src={mockup6}
               alt="mockup3"
@@ -131,7 +131,7 @@ const Landingpage = () => {
             Create by HTML, CSS, javascript, and GSAP Scrolltriger
           </h6>
           <p
-            className={`${poppinsFontRegular400.className} text-xs pt-5 pb-5 border-b border-gray-600 tabletMinWidth:text-sm fullHdMinWidth:text-xl`}
+            className={`${poppinsFontRegular400.className} text-xs py-5 tabletMinWidth:text-sm fullHdMinWidth:text-xl`}
           >
             AntaValley is Resort Holding Landing Page, create by motion loop
             style based on 2D Assets. Its combine unique, interactive with
@@ -151,8 +151,8 @@ const Landingpage = () => {
 
         {/* first portfolio web ------------------------------------------------ */}
 
-        <div className="grid grid-cols-2 grid-flow-row gap-1 py-5 border-b border-gray-600 tabletMinWidth:py-10">
-          <div className="flex-1 col-span-2 ">
+        <div className="grid grid-cols-2 grid-flow-row gap-1 py-5 tabletMinWidth:py-10">
+          <div className="flex-1 border border-stone-700 p-3 col-span-2 ">
             <Image
               src={mockup7}
               alt="mockup1"
@@ -173,7 +173,7 @@ const Landingpage = () => {
             Create by HTML, CSS, javascript, and GSAP ScrollSmoother
           </h6>
           <p
-            className={`${poppinsFontRegular400.className} text-xs pt-5 pb-5 border-b border-gray-600 tabletMinWidth:text-sm fullHdMinWidth:text-xl`}
+            className={`${poppinsFontRegular400.className} text-xs pt-5 pb-5 tabletMinWidth:text-sm fullHdMinWidth:text-xl`}
           >
             This is my first website. As a graphic design, i want to expand and
             improve my soft-skills. Because my basics on the design software and
