@@ -24,7 +24,9 @@ const Navbar = () => {
       <nav className={`${poppinsFontRegular400.className} relative z-10 py-5`}>
         <div className="w-full flex items-center justify-between">
           <h1 className="text-xs shadow-xl rounded-[50px] border border-stone-700 px-5 py-1 uppercase laptopMinWidth:text-sm desktopMinWidth:px-5 desktopMinWidth:py-2">
-            <Link href="/">Agung</Link>
+            <Link rel="preloaded" href="/">
+              Agung
+            </Link>
           </h1>
 
           {/* desktop menu    */}

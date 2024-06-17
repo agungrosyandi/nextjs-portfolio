@@ -1,4 +1,4 @@
-import { poppinsFontRegular400, roboto } from "../lib/font";
+import { roboto } from "../lib/font";
 
 import {
   VideoCamping1,

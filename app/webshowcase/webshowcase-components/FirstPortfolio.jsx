@@ -16,7 +16,7 @@ export default function FirstPortfolio() {
         <p
           className={`${poppinsFontRegular400.className} text-xs py-3 font-bold `}
         >
-          Create by HTML, CSS, javascript, and GSAP ScrollSmoother
+          Tools : HTML, CSS, javascript, and GSAP ScrollSmoother
         </p>
         <p
           className={`${roboto.className} text-xs laptopMinWidth:text-sm fullHdMinWidth:text-lg`}

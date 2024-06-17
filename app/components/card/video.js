@@ -1,5 +1,3 @@
-import React from "react";
-
 // home video sections ---------------------------------------------------
 
 const VideoHomeBackground = () => {
