@@ -12,7 +12,7 @@ const HomeSections = () => {
         <div
           className={`font-DrukBoldTrial uppercase py-2 flex flex-col text-5xl tabletMinWidth:text-5xl laptopMinWidth:text-7xl desktopMinWidth:py-3 fullHdMinWidth:text-8xl`}
         >
-          <h1 className="">Agung Rosyandi</h1>
+          <h1 className="">Johnny Rosyandi</h1>
         </div>
         <p
           className={`${poppinsFontRegular400.className} text-xs py-3 laptopMinWidth:w-[90%] laptopMinWidth:text-sm laptopMinWidth:pr-10 fullHdMinWidth:text-lg`}
