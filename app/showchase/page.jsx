@@ -8,7 +8,7 @@ import {
   VideoAquarium2,
   VideoScooter1,
   VideoDeepsea,
-} from "./showchase-components/VideoAssets";
+} from "./VideoAssets";
 
 // main components
 
