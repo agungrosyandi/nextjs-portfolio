@@ -1,5 +1,3 @@
-import React from "react";
-
 // video assets import ----------------------------------------------------
 
 const VideoCamping1 = () => {

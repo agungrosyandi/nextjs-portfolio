@@ -9,6 +9,11 @@
   src: url("../font/Druk-Bold-Trial.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "DrukMediumTrial";
+  src: url("../font/Druk-Medium-Trial.otf") format("opentype");
+}
+
 :root {
   scroll-behavior: smooth;
   overflow-x: hidden;
