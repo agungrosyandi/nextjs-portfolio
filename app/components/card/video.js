@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 
 // home video sections ---------------------------------------------------
 

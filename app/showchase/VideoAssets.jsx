@@ -1,4 +1,4 @@
-// video assets import ----------------------------------------------------
+"use client";
 
 const VideoCamping1 = () => {
   return (
