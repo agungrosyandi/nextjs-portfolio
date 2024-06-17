@@ -1,5 +1,5 @@
 import { poppinsFontRegular400, roboto } from "@/app/lib/font";
-import { VideoHomeBackground } from "../video";
+import { VideoHomeBackground } from "./video";
 
 const HomeSections = () => {
   return (
