@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 
 import AppSections from "./components/App";
 
