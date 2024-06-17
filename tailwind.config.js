@@ -37,9 +37,7 @@ module.exports = {
 
       fontFamily: {
         DrukBoldTrial: ["DrukBoldTrial"],
-        MonaSansBold: ["MonaSansBold"],
-        MonaSansLightNarrow: ["MonaSansLightNarrow"],
-        MonaSansLight: ["MonaSansLight"],
+        DrukMediumTrial: ["DrukMediumTrial"],
       },
 
       // syntax example: text-smallLogo or text-mediumLogo

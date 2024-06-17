@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { poppinsFontRegular400 } from "../lib/font";
 
@@ -21,10 +21,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav
-        className={`${poppinsFontRegular400.className} relative w-screen z-10 pt-5 desktopMinWidth:px-8 fullHdMinWidth:px-28`}
-      >
-        <div className="w-full flex items-center justify-between py-2 px-5">
+      <nav className={`${poppinsFontRegular400.className} relative z-10 py-5`}>
+        <div className="w-full flex items-center justify-between">
           <h1 className="text-xs shadow-xl rounded-[50px] border border-stone-700 px-5 py-1 uppercase laptopMinWidth:text-sm desktopMinWidth:px-5 desktopMinWidth:py-2">
             <Link href="/">Agung</Link>
           </h1>
@@ -75,7 +73,7 @@ const Navbar = () => {
 
           <div
             onClick={handleNav}
-            className="z-10 block desktopMinWidth:hidden"
+            className="z-10 relative block desktopMinWidth:hidden"
           >
             {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
           </div>
