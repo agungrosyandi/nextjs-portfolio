@@ -1,6 +1,8 @@
+import React from "react";
+
 // home video sections ---------------------------------------------------
 
-export const VideoHomeBackground = () => {
+const VideoHomeBackground = () => {
   return (
     <>
       <video
@@ -18,7 +20,7 @@ export const VideoHomeBackground = () => {
   );
 };
 
-export const GraphicDesignVideo = () => {
+const GraphicDesignVideo = () => {
   return (
     <>
       <video
@@ -36,7 +38,7 @@ export const GraphicDesignVideo = () => {
   );
 };
 
-export const WebDevelopmentVideo = () => {
+const WebDevelopmentVideo = () => {
   return (
     <>
       <video
@@ -53,3 +55,5 @@ export const WebDevelopmentVideo = () => {
     </>
   );
 };
+
+export { GraphicDesignVideo, VideoHomeBackground, WebDevelopmentVideo };
