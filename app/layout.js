@@ -15,11 +15,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} bg-[#FFFAE6] text-[#464646]`}>
-        <Container>
-          <Header />
-          {children}
-          <Footer />
-        </Container>
+        {/* <Container> */}
+        {/* <Header /> */}
+        {children}
+        {/* <Footer /> */}
+        {/* </Container> */}
       </body>
     </html>
   );
