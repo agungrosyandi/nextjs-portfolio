@@ -1,4 +1,4 @@
-import { Poppins, Montserrat } from "@next/font/google";
+import { Poppins, Montserrat, Roboto } from "@next/font/google";
 
 const poppinsFontRegular400 = Poppins({
   style: ["normal"],
@@ -12,4 +12,10 @@ const montserrat = Montserrat({
   weight: ["400"],
 });
 
-export { poppinsFontRegular400, montserrat };
+const roboto = Roboto({
+  style: ["normal"],
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+export { poppinsFontRegular400, montserrat, roboto };

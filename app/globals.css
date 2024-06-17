@@ -5,32 +5,8 @@
 /* default settings */
 
 @font-face {
-  font-family: 'DrukBoldTrial';
-  src: url('../font/Druk-Bold-Trial.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'MonaSansLight';
-  src: url('../font/Mona-Sans.woff2') format('woff2 supports variations'),
-    url('../font/Mona-Sans.woff2') format('woff2-variations');
-  font-weight: 200;
-  font-stretch: 100%;
-}
-
-@font-face {
-  font-family: 'MonaSansLightNarrow';
-  src: url('../font/Mona-Sans.woff2') format('woff2 supports variations'),
-    url('../font/Mona-Sans.woff2') format('woff2-variations');
-  font-weight: 200;
-  font-stretch: 75%;
-}
-
-@font-face {
-  font-family: 'MonaSansBold';
-  src: url('../font/Mona-Sans.woff2') format('woff2 supports variations'),
-    url('../font/Mona-Sans.woff2') format('woff2-variations');
-  font-weight: 500;
-  font-stretch: 125%;
+  font-family: "DrukBoldTrial";
+  src: url("../font/Druk-Bold-Trial.otf") format("opentype");
 }
 
 :root {

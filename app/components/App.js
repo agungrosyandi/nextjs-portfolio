@@ -10,10 +10,7 @@ import ClosingSections from "./card/closing";
 const Home = () => {
   return (
     <>
-      <section
-        id="home"
-        className="section-style-home px-5 pb-5 desktopMinWidth:px-14 fullHdMinWidth:px-32"
-      >
+      <section id="home" className="section-style-home">
         <div className="relative text-[#464646]">
           <div className="grid grid-cols-2 grid-flow-dense gap-5 py-5 laptopMinWidth:grid-cols-4 laptopMinWidth:grid-rows-1">
             <div className="bg-[#FFFAE6] border border-stone-700 rounded-[50px] shadow-xl flex-1 col-span-2 tabletMinWidth:col-span-2 tabletMinWidth:row-span-2 tabletMinWidth:col-start-1 tabletMinWidth:col-end-5 desktopMinWidth:px-0 desktopMinWidth:border-none desktopMinWidth:shadow-none">
