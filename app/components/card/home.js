@@ -1,31 +1,43 @@
 import { poppinsFontRegular400, roboto } from "@/app/lib/font";
 import { VideoHomeBackground } from "./video";
+import { MdEmail } from "react-icons/md";
+import Link from "next/link";
 
 const HomeSections = () => {
   return (
-    <div className="flex flex-col justify-center tabletMinWidth:flex-row">
-      <div className="flex-1 p-5 tabletMinWidth:flex tabletMinWidth:flex-col tabletMinWidth:justify-center laptopMinWidth:text-start desktopMinWidth:pb-32">
+    <section className="relative text-[#430000] py-10 w-full h-full flex flex-col justify-center items-center desktopMinWidth:flex-row desktopMinWidth:py-5 ">
+      <div className="flex-1 gap-4 flex flex-col justify-center items-center text-center desktopMinWidth:text-start desktopMinWidth:items-start desktopMinWidth:gap-5 ">
         <p
-          className={`${poppinsFontRegular400.className} text-sm laptopMinWidth:text-base`}
+          className={`${poppinsFontRegular400.className} text-xs text-[#430000] tabletMinWidth:text-base`}
         >
           Hi, My Name is
         </p>
-        <div
-          className={`font-DrukMediumTrial py-2 flex flex-col text-5xl laptopMinWidth:text-7xl fullHdMinWidth:text-8xl`}
+
+        <h1
+          className={`font-DrukMediumTrial text-[#FFFAE6] drop-shadow-[0_1.10px_1.10px_rgba(0,0,0,0.8)] text-5xl tabletMinWidth:text-7xl fullHdMinWidth:text-8xl`}
         >
-          <h1>Agung Rosyandi</h1>
-        </div>
+          Agung Rosyandi
+        </h1>
+
         <p
-          className={`${roboto.className} text-xs py-3 laptopMinWidth:w-[90%] laptopMinWidth:text-sm laptopMinWidth:pr-10 fullHdMinWidth:text-lg`}
+          className={`${roboto.className} bg-[#FFFAE6] border border-stone-700 shadow-xl rounded-2xl p-5 drop-shadow-[0_1.10px_1.10px_rgba(0,0,0,0.8)] text-xs tabletMinWidth:text-base desktopMinWidth:text-sm fullHdMinWidth:text-base`}
         >
-          I build graphic design, minimalist landing page, and motion graphic.
-          Accessible, inclusive products for social media and the web
+          Graphic and Web designer based in Bandung West Java Indonesia.
+          Currently my strong focus on Web development especialy Front-end with
+          combine my skills in Adobe Creative Suits to enhance my workflow.
         </p>
+        <div className="flex gap-3 px-5 py-2 bg-[#FFFAE6] border border-stone-700 shadow-xl rounded-2xl drop-shadow-[0_1.10px_1.10px_rgba(0,0,0,0.8)] items-center text-xs tabletMinWidth:text-base desktopMinWidth:py-2  desktopMinWidth:text-sm fullHdMinWidth:text-base">
+          <MdEmail size={20} />
+
+          <Link rel="preload" href="mailto:agungrosyandi@gmail.com">
+            Send me Email
+          </Link>
+        </div>
       </div>
-      <div className="relative flex-1 desktopMinWidth:border border-stone-700 desktopMinWidth:rounded-[50px] desktopMinWidth:shadow-xl">
+      <div className="relative flex-1 w-[100%] shadow-xl desktopMinWidth:shadow-none">
         <VideoHomeBackground />
       </div>
-    </div>
+    </section>
   );
 };
 

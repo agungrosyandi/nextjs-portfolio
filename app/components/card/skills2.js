@@ -1,39 +1,33 @@
-import React from "react";
-import Link from "next/link";
-import { roboto } from "@/app/lib/font";
 import { WebDevelopmentVideo } from "./video";
+
+import NarasiHistorian from "../../webshowcase/webshowcase-components/NarasiHistorian";
+import AntaValley from "../../webshowcase/webshowcase-components/AntaValley.jsx";
+import FirstPortfolio from "../../webshowcase/webshowcase-components/FirstPortfolio.jsx";
+import SkillsContainerTitle from "./SkillsContainerTitle";
 
 const Skills2Sections = () => {
   return (
-    <div className="flex flex-col justify-center tabletMinWidth:flex-row desktopMinWidth:flex-row-reverse">
-      <div className="flex-1 relative">
+    <section className="relative gap-2 flex flex-col justify-center items-center py-5 desktopMinWidth:flex-row-reverse">
+      <div className="flex-1 w-full">
         <WebDevelopmentVideo />
       </div>
-      <div className="flex-1 px-5 pb-10 tabletMinWidth:py-5 tabletMinWidth:flex tabletMinWidth:flex-col tabletMinWidth:justify-center desktopMinWidth:pl-20">
-        <h1
-          className={`font-DrukMediumTrial text-4xl laptopMinWidth:text-5xl fullHdMinWidth:text-7xl`}
-        >
-          Web Development
-        </h1>
-        <p className="py-3 text-xs font-bold laptopMinWidth:text-sm">
-          Tools: HTML, CSS, Javascript
-        </p>
-        <p
-          className={`${roboto.className} pb-5 pr-3 text-xs laptopMinWidth:text-sm fullHdMinWidth:text-lg`}
-        >
-          In the era Digitalization 4.0, graphic and video content stil not
-          enough to make your content special and unique, so build your content
-          into the web development.
-        </p>
-        <div className="">
-          <button className="rounded-full shadow shadow-black/60 bg-transparent py-2 px-10 capitalize">
-            <Link href="/webshowcase">
-              <p className="text-xs fullHdMinWidth:text-sm">More Detail</p>
-            </Link>
-          </button>
+      <div className="flex-1 gap-3 flex flex-col desktopMinWidth:gap-5">
+        <SkillsContainerTitle
+          title=" UI / UX Web Design"
+          tools="Tools: Figma, HTML, CSS, Javascript"
+          paragraph="Build design concept from the scratch with Figma or Adobe Software.
+            Convert design concept to programming in HTML CSS Javascript.
+            Then deploy and publish to become the interactive landing page or
+            web app."
+        />
+
+        <div className="gap-5 flex flex-col desktopMinWidth:flex-row">
+          <NarasiHistorian />
+          <AntaValley />
+          <FirstPortfolio />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
