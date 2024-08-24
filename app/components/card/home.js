@@ -5,10 +5,10 @@ import Link from "next/link";
 
 const HomeSections = () => {
   return (
-    <section className="relative text-[#430000] py-10 w-full h-full flex flex-col justify-center items-center desktopMinWidth:flex-row desktopMinWidth:py-5 ">
+    <section className="relative text-[#430000] py-5 w-full h-full flex flex-col justify-center items-center desktopMinWidth:flex-row desktopMinWidth:py-5 ">
       <div className="flex-1 gap-4 flex flex-col justify-center items-center text-center desktopMinWidth:text-start desktopMinWidth:items-start desktopMinWidth:gap-5 ">
         <p
-          className={`${poppinsFontRegular400.className} text-xs text-[#430000] tabletMinWidth:text-base`}
+          className={`${poppinsFontRegular400.className} text-xs text-[#FFFAE6] drop-shadow-[0_1.10px_1.10px_rgba(0,0,0,0.8)] tabletMinWidth:text-base`}
         >
           Hi, My Name is
         </p>

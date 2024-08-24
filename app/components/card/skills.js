@@ -25,15 +25,15 @@ const SkillsSections = () => {
         />
 
         <div className="gap-5 flex flex-col desktopMinWidth:flex-row">
-          <div className="border border-stone-700 p-3 w-[100%]">
+          <div className="shadow-xl p-3 w-[100%]">
             <Fish11000px />
           </div>
 
-          <div className="border border-stone-700 p-3 w-[100%]">
+          <div className="shadow-xl p-3 w-[100%]">
             <Fish21000px />
           </div>
 
-          <div className="border border-stone-700 p-3 w-[100%]">
+          <div className="shadow-xl p-3 w-[100%]">
             <Scooter21000px />
           </div>
         </div>

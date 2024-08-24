@@ -12,7 +12,7 @@ import NavbarDesktop from "./card/NavbarDesktop";
 const Navbar = () => {
   return (
     <>
-      <nav className={`${poppinsFontRegular400.className} relative z-10 py-5`}>
+      <nav className={`${poppinsFontRegular400.className} relative z-10 py-2`}>
         <div className="w-full flex items-center justify-between">
           <NavbarMainHome>
             <Link href="/">AG</Link>
