@@ -10,7 +10,7 @@ export function SectionWebDevelopment({ children }) {
 
 export function DescriptionContainer({ children }) {
   return (
-    <div className="flex-1 w-full gap-5 flex flex-col pb-5 border-b border-gray-600 desktopMinWidth:border-none desktopMinWidth:gap-2 desktopMinWidth:pb-0">
+    <div className="flex-1 w-full gap-5 flex flex-col p-5 shadow-lg desktopMinWidth:border-none desktopMinWidth:gap-2">
       {children}
     </div>
   );

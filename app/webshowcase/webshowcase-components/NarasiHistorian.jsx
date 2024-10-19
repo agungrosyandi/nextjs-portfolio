@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaArrowCircleRight } from "react-icons/fa";
 
-import mockup1 from "../../../public/img/narasihistorian.jpg";
+import mockup1 from "../../../public/img/narasihistorian bg.jpg";
 import ImageWebPortfolio from "./ImageWebPortfolio";
 import {
   DescriptionContainer,
@@ -28,13 +28,6 @@ export default function NarasiHistorian() {
       </ImageWebPortfolio>
 
       <DescriptionContainer>
-        <DescriptionTitle>Blog App (Beta)</DescriptionTitle>
-        <DescriptionParagraph>
-          Narasihistorian is history content blog with interactive aproach,
-          visual pleasing, and smooth and simple responsive layout in the
-          desktop, tab or mobile with high quallity content through article.
-        </DescriptionParagraph>
-
         <ContainerLink>
           <FaArrowCircleRight />
           <Link href="https://narasihistorian.netlify.app/" target="_blank">

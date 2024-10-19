@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import mockup5 from "../../../public/img/antavalley.jpg";
+import mockup5 from "../../../public/img/antavalley-bg.jpg";
 import {
   ContainerLink,
   ContainerLinkHyperlink,
@@ -25,14 +25,6 @@ export default function AntaValley() {
       </ImageWebPortfolio>
 
       <DescriptionContainer>
-        <DescriptionTitle> Landing Page (Beta)</DescriptionTitle>
-        <DescriptionParagraph>
-          AntaValley is Resort Holding Landing Page create by motion design with
-          2D style. Its combine unique, interactive with visual pleasing
-          website, so it can make good assessment for the user when they want to
-          find information about resort on the internet.
-        </DescriptionParagraph>
-
         <ContainerLink>
           <FaArrowCircleRight />
           <Link

@@ -4,16 +4,19 @@ import {
   Fish11000px,
   Fish21000px,
   Scooter21000px,
+  Pic1,
+  Pic2,
+  Pic3,
 } from "../../showchase/VideoAssets";
 import SkillsContainerTitle from "./SkillsContainerTitle";
 
 const SkillsSections = () => {
   return (
-    <section className="relative gap-2 flex flex-col justify-center items-center py-5 desktopMinWidth:flex-row-reverse">
-      <div className="flex-1 w-full">
+    <section className="relative pt-10 pb-20 grid gap-5 grid-cols-6 tabletMinWidth:gap-10">
+      <div className="col-span-6 desktopMinWidth:col-span-3">
         <GraphicDesignVideo />
       </div>
-      <div className="flex-1 gap-3 flex flex-col desktopMinWidth:gap-5">
+      <div className="col-span-6 desktopMinWidth:col-span-3 desktopMinWidth:flex desktopMinWidth:justify-center">
         <SkillsContainerTitle
           title="Graphic & Motion Design"
           tools="Tools: Illustrator, Photoshop, After Effect"
@@ -23,20 +26,38 @@ const SkillsSections = () => {
             interactive 2D motion loop style to enhance my work. Including for
             social media content, digital design, motion design, or for the Web."
         />
+      </div>
 
-        <div className="gap-5 flex flex-col desktopMinWidth:flex-row">
-          <div className="shadow-xl p-3 w-[100%]">
-            <Fish11000px />
-          </div>
-
-          <div className="shadow-xl p-3 w-[100%]">
-            <Fish21000px />
-          </div>
-
-          <div className="shadow-xl p-3 w-[100%]">
-            <Scooter21000px />
-          </div>
+      <div className="col-span-6">
+        <div className="flex gap-5 flex-wrap justify-center text-xs font-bold tabletMinWidth:text-base desktopMinWidth:text-xl">
+          <p>Photoshop</p>
+          <p>Illustrator</p>
+          <p>After Effect</p>
         </div>
+      </div>
+
+      <div className="col-span-6 shadow-xl tabletMinWidth:col-span-3 desktopMinWidth:col-span-2">
+        <Fish11000px />
+      </div>
+
+      <div className="col-span-6 shadow-xl tabletMinWidth:col-span-3 desktopMinWidth:col-span-2">
+        <Fish21000px />
+      </div>
+
+      <div className="col-span-6 shadow-xl tabletMinWidth:col-span-3 desktopMinWidth:col-span-2">
+        <Scooter21000px />
+      </div>
+
+      <div className="col-span-6 shadow-xl tabletMinWidth:col-span-3 desktopMinWidth:col-span-2">
+        <Pic1 />
+      </div>
+
+      <div className="col-span-6 shadow-xl tabletMinWidth:col-span-3 desktopMinWidth:col-span-2">
+        <Pic2 />
+      </div>
+
+      <div className="col-span-6 shadow-xl tabletMinWidth:col-span-3 desktopMinWidth:col-span-2">
+        <Pic3 />
       </div>
     </section>
   );

@@ -1,5 +1,10 @@
 "use client";
 
+import Image from "next/image";
+import gambar1 from "../../public/img/5.jpg";
+import gambar2 from "../../public/img/6.jpg";
+import gambar3 from "../../public/img/7.jpg";
+
 const VideoCamping1 = () => {
   return (
     <>
@@ -162,6 +167,51 @@ const Scooter21000px = () => {
   );
 };
 
+const Pic1 = () => {
+  return (
+    <>
+      <Image
+        className="relative w-full h-full shadow-xl  object-cover left-0 right-0 top-0 bottom-0 z-[2] "
+        width={1000}
+        height={1000}
+        src={gambar1}
+        loading="lazy"
+        alt="pic 1 gambar"
+      />
+    </>
+  );
+};
+
+const Pic2 = () => {
+  return (
+    <>
+      <Image
+        className="relative w-full h-full shadow-xl  object-cover left-0 right-0 top-0 bottom-0 z-[2] "
+        width={1000}
+        height={1000}
+        src={gambar2}
+        loading="lazy"
+        alt="pic 1 gambar"
+      />
+    </>
+  );
+};
+
+const Pic3 = () => {
+  return (
+    <>
+      <Image
+        className="relative w-full h-full shadow-xl  object-cover left-0 right-0 top-0 bottom-0 z-[2] "
+        width={1000}
+        height={1000}
+        src={gambar3}
+        loading="lazy"
+        alt="pic 1 gambar"
+      />
+    </>
+  );
+};
+
 export {
   VideoCamping1,
   VideoCamping2,
@@ -172,4 +222,7 @@ export {
   Fish11000px,
   Fish21000px,
   Scooter21000px,
+  Pic1,
+  Pic2,
+  Pic3,
 };

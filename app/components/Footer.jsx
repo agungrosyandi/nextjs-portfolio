@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { FaCopyright } from "react-icons/fa6";
+import { FaCopyright, FaFilePdf } from "react-icons/fa6";
 import { IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
-import { MdEmail } from "react-icons/md";
 
 export default function Footer() {
   return (
@@ -26,8 +25,11 @@ export default function Footer() {
         >
           <IoLogoGithub size={20} />
         </Link>
-        <Link rel="preload" href="mailto:agungrosyandi@gmail.com">
-          <MdEmail size={20} />
+        <Link
+          rel="preload"
+          href="https://drive.google.com/uc?export=download&id=1WxdDJZkxp1xxealLDvVM6VeASpha6C-x"
+        >
+          <FaFilePdf size={20} />
         </Link>
       </div>
     </footer>

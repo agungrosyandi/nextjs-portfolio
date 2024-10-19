@@ -4,7 +4,7 @@ import HomeSections from "./card/home";
 
 const Home = () => {
   return (
-    <main className="relative w-full h-full">
+    <main className="relative w-full h-full pt-10 pb-20">
       <HomeSections />
     </main>
   );

@@ -29,6 +29,11 @@
   box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  overflow-x: hidden;
+  display: none;
+}
+
 body {
   overflow-x: hidden;
 }

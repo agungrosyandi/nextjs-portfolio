@@ -1,4 +1,4 @@
-import { Poppins, Montserrat, Roboto } from "@next/font/google";
+import { Poppins, Montserrat, Roboto } from "next/font/google";
 
 const poppinsFontRegular400 = Poppins({
   style: ["normal"],
