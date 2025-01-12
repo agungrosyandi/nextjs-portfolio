@@ -1,26 +1,27 @@
-import Container from "./components/Container";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import "./globals.css";
+import Container from "../components/Container";
 import { Inter } from "next/font/google";
+import "./globals.css";
+
+import { ReactLenis } from "@/hooks/useLenis";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Agung Rosyandi",
-  description: "portfolio vector style",
+  description: "portfolio V2",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[#ffffff] text-[#464646]`}>
-        <Container>
-          <Header />
-          {children}
-          <Footer />
-        </Container>
-      </body>
+      <ReactLenis root>
+        <body className={`${inter.className} bg-[#ffffff] text-[#464646]`}>
+          <Container>
+            {children} <Footer />
+          </Container>
+        </body>
+      </ReactLenis>
     </html>
   );
 }
